@@ -100,8 +100,8 @@ public class Corpus {
     }
     
 
-    private String inputFile1, inputFile2, inputFile3;
+    private final String inputFile1, inputFile2, inputFile3;
     private BufferedReader corpusBufferedReader;
-    private StringBuilder stringBuilder;
+    private final StringBuilder stringBuilder;
     private boolean reachedTheSecondDocument, reachedTheThirdDocument;
 }
