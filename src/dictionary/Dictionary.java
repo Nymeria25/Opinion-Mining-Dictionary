@@ -85,17 +85,12 @@ public class Dictionary {
     }
 
     public void CreateDictionary() throws IOException {
-       // int iterator = 0;
         String chunk = "";
-
         do {
-         //   iterator++;
             chunk = corpus_.Split("CAP.");
-
             if (chunk != null) {
                 this.POSTag(chunk);
             }
-
         } while (chunk != null);
     }
 
@@ -141,12 +136,10 @@ public class Dictionary {
     }
 
     private void ClusterByPOSCategory(List<AnalyzedTokenReadings> wordTags) {
+
         for (AnalyzedTokenReadings analyzedTokenReadings : wordTags) {
-            int length = analyzedTokenReadings.getReadingsLength();
-            for (int i = 0; i < length; i++) {
-                AnalyzedToken token = analyzedTokenReadings.
-                        getAnalyzedToken(i);
-                if (token.getLemma() != null) {
+            for (AnalyzedToken token : analyzedTokenReadings) {
+                if (token.getPOSTag() != null) {
                     if (isAdjective(token)) {
                         adjectives_.add(token.getLemma());
                     } else if (isAdverb(token)) {
@@ -154,6 +147,8 @@ public class Dictionary {
                     } else if (isVerb(token)) {
                         verbs_.add(token.getLemma());
                     }
+                } else {
+                    unrecognizedWords_.add(token.getTokenInflected());
                 }
             }
         }
@@ -177,7 +172,7 @@ public class Dictionary {
 
     private Set GetSetOfWordsFromString(String fileChunk) {
         Set words = new HashSet();
-        String[] tokens = fileChunk.split("[\\s.,!]");
+        String[] tokens = fileChunk.split("[\\s.,!:;()-?]");
 
         for (String token : tokens) {
             if (token.length() > 1) {

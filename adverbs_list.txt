@@ -83,7 +83,6 @@ turcește
 nicăirea
 da
 adeseori
-într-acoace
 încât
 groaznic
 plăcut
@@ -142,14 +141,16 @@ tij
 întreit
 până
 cum
-într-una
 tari
+dedesubt
 vârtos
 tare
 dindărăt
 noaptea
 atuncea
 necontenit
+îndărăt
+liber
 lămurit
 năuntru
 ușor
@@ -220,6 +221,7 @@ dimineață
 presus
 înainte
 oare
+câteodată
 oricum
 demult
 îndelung
@@ -257,6 +259,7 @@ iară
 deopotrivă
 domnește
 lesne
+acoace
 dincolo
 așijderea
 cruciș

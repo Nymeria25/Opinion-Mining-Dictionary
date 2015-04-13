@@ -75,7 +75,7 @@ public class BuildDictionary {
 
         OutputStream fis = new FileOutputStream("result.txt");
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(
-                fis, Charset.forName("UTF-8"));
+                fis, Charset.forName("UTF-8")); 
         BufferedWriter writer = new BufferedWriter(outputStreamWriter);
 
         while (true) {

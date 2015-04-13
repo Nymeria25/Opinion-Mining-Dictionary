@@ -20,6 +20,7 @@ cerchez
 înfrumusețat
 artficial
 viitor
+multi
 harnic
 morav
 calvin
@@ -33,8 +34,8 @@ jidovesc
 semeț
 grec
 nespus
-crăiesc
 strălucit
+crăiesc
 greu
 copilăresc
 basc
@@ -127,7 +128,9 @@ trainic
 neprietenesc
 ascuțit
 longobard
+fidel
 catolic
+oblu
 voit
 lungit
 jos
@@ -147,6 +150,7 @@ mâhnit
 nepotrivit
 lipit
 crescut
+înglodat
 întrebat
 nesmintit
 nenorocit
@@ -200,6 +204,7 @@ fericit
 puternic
 valah
 obez
+netrebnic
 primit
 ostășesc
 chior
@@ -225,8 +230,8 @@ boreal
 turcit
 retezat
 geografic
-nemișcat
 trecător
+nemișcat
 părăsit
 iscălit
 răsăritean
@@ -272,6 +277,7 @@ cernut
 armean
 saxon
 băut
+înrădăcinat
 pravoslavnic
 îndestul
 renumit
@@ -298,6 +304,7 @@ vârtos
 indigen
 rămas
 logodit
+neschimbător
 dovedit
 armenesc
 năimit
@@ -483,8 +490,8 @@ făcut
 nesupus
 următor
 necinstit
-roman
 ispitit
+roman
 ocupat
 întristat
 cernit
@@ -512,8 +519,8 @@ blând
 propriu
 blagoslovit
 vechi
-stăpânitor
 trecut
+stăpânitor
 uricios
 scăpat
 alb
@@ -575,8 +582,8 @@ adevărat
 romanesc
 slăvit
 lovit
-dimprejur
 netăiat
+dimprejur
 răschirat
 grabnic
 larg
@@ -595,6 +602,7 @@ strașnic
 occidental
 exilat
 politic
+ardelenesc
 războinic
 deschis
 rece
@@ -693,8 +701,8 @@ bicisnic
 lung
 slav
 descins
-păgân
 pribeag
+păgân
 meșter
 dator
 podgoriu
@@ -782,11 +790,12 @@ miruit
 rugător
 înfrânt
 des
-nevinovat
 obișnuit
+nevinovat
 picat
 pătruns
 tiran
+neglasnic
 dentăi
 gingaș
 septentrional
@@ -797,6 +806,7 @@ prefăcut
 strălucitor
 intim
 tăiat
+armat
 sătul
 scutit
 mic
@@ -804,8 +814,9 @@ nepipăit
 amestecat
 comandat
 cinstit
-creștinesc
 aproape
+creștinesc
+manuscris
 nemțesc
 stropșit
 promis
@@ -833,6 +844,7 @@ rășchirat
 celebru
 apucat
 păgânesc
+îmbolditor
 alăturat
 român
 nevăzut
@@ -853,6 +865,7 @@ aiurea
 troian
 arhieresc
 ilustrat
+sârbesc
 bulgar
 literar
 domestic

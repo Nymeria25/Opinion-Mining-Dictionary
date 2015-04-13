@@ -1,4 +1,6 @@
+împiedica
 așterne
+clădi
 îmbrăca
 jelui
 cunoaște
@@ -20,6 +22,7 @@ maria
 împreuna
 poticni
 șerbi
+lărgi
 umple
 iubi
 lăcui
@@ -33,6 +36,7 @@ pristăvi
 pieri
 păstra
 trebui
+strecura
 megieși
 deprinde
 umbla
@@ -45,8 +49,8 @@ nesocoti
 năvăli
 risipi
 alina
-porunci
 legăna
+porunci
 schimonosi
 înceta
 zădărî
@@ -72,9 +76,9 @@ scuti
 larga
 răsplăti
 învălui
+răzbi
 naște
 sumeți
-răzbi
 dezbrăca
 cultiva
 dobândi
@@ -133,6 +137,7 @@ ieși
 roi
 întoarce
 nota
+pescări
 destupa
 năbuși
 îndrăzni
@@ -142,6 +147,7 @@ scurta
 căi
 muri
 netezi
+măcina
 tătărî
 omeți
 ucide
@@ -197,19 +203,20 @@ răschira
 ședea
 mustra
 îngloti
+aminti
 vădi
 socri
 oști
 sparge
 sârgui
+iui
 suferi
 lungi
 împărtăși
 cutremura
-iui
 seca
-domestici
 cruța
+domestici
 încrunta
 repezi
 însura
@@ -238,8 +245,8 @@ sosi
 pica
 turci
 îngreuia
-ivi
 iscusi
+ivi
 milostivi
 fura
 răsădi
@@ -251,6 +258,8 @@ goni
 răni
 întemeia
 lua
+nemulțumi
+strădui
 descinge
 călugări
 cosi
@@ -291,6 +300,7 @@ admite
 ajunge
 crunta
 mărturisi
+bizui
 certa
 lumina
 astruca
@@ -337,15 +347,19 @@ plugări
 înconjura
 jertfi
 vârî
+înrădăcina
 străbate
+schimosi
 veni
 parola
 buda
 stârni
+îndulci
 obști
 răspândi
 masa
 introduce
+izgoni
 trâmbița
 secera
 răbda
@@ -359,6 +373,7 @@ gusta
 vântura
 părăsi
 statua
+noroci
 deschide
 administra
 cerni
@@ -382,6 +397,7 @@ aduce
 însemna
 crește
 turna
+îngloda
 întări
 pârî
 potrivi
@@ -471,6 +487,7 @@ deosebi
 iscăli
 minuna
 compensa
+urâți
 da
 bucăți
 lepăda
@@ -504,8 +521,8 @@ smoli
 susține
 curăți
 devasta
-asupri
 viețui
+asupri
 amorți
 oborî
 învinge
@@ -572,6 +589,7 @@ produce
 folosi
 împlini
 prosti
+rocoși
 lovi
 îngriji
 înfrumuseța
@@ -651,6 +669,7 @@ sfătui
 reînsănătoși
 vrăjmăși
 sprijini
+pecetlui
 mâli
 respinge
 cumpăra
@@ -695,6 +714,7 @@ urmări
 omeni
 pune
 ilustra
+priponi
 republica
 globi
 sui
@@ -719,6 +739,7 @@ căzni
 prinde
 răscoli
 copia
+strâmtora
 via
 poftori
 ceda
@@ -773,8 +794,8 @@ vătăma
 încăpea
 forța
 slăbănogi
-judeca
 păzi
+judeca
 scorni
 încinge
 celebra
@@ -793,8 +814,8 @@ tuna
 gândi
 afla
 războli
-înainta
 lipsi
+înainta
 rade
 apăra
 îndeletnici
