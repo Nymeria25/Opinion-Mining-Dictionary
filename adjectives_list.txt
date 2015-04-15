@@ -1,3 +1,4 @@
+rutean
 slavonesc
 candidat
 nemulțumitor
@@ -104,6 +105,7 @@ strâns
 elin
 însurat
 tare
+ursit
 nepomenit
 răpitor
 adunat
@@ -125,6 +127,7 @@ slobod
 alergător
 cununat
 trainic
+vergelat
 neprietenesc
 ascuțit
 longobard
@@ -190,8 +193,8 @@ luminat
 bătrân
 arăpesc
 hotărât
-tânăr
 unic
+tânăr
 jeluit
 născut
 latinesc
@@ -394,6 +397,7 @@ stăpânit
 proaspăt
 autocrat
 încins
+zburător
 împreunat
 egal
 navigabil
@@ -622,11 +626,12 @@ bogat
 sempitern
 nobil
 pârjolit
-inimic
 venețian
+inimic
 dezbrăcat
 împrăștiat
 naval
+nevrednic
 mineral
 volnic
 albiu

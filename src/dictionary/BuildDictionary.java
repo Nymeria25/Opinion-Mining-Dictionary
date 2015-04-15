@@ -56,7 +56,7 @@ public class BuildDictionary {
 
     public static void testSplitter(String chunk) {
         Set words = new HashSet();
-        String[] tokens = chunk.split("[\\s.,!]");
+        String[] tokens = chunk.split("[\\s.,!'-]");
 
         for (String token : tokens) {
             if (token.length() > 1) {

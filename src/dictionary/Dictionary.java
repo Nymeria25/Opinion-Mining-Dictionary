@@ -139,19 +139,27 @@ public class Dictionary {
 
         for (AnalyzedTokenReadings analyzedTokenReadings : wordTags) {
             for (AnalyzedToken token : analyzedTokenReadings) {
-                if (token.getPOSTag() != null) {
-                    if (isAdjective(token)) {
-                        adjectives_.add(token.getLemma());
-                    } else if (isAdverb(token)) {
-                        adverbs_.add(token.getLemma());
-                    } else if (isVerb(token)) {
-                        verbs_.add(token.getLemma());
-                    }
-                } else {
+                String tokenPOSTag = token.getPOSTag();
+                if (tokenPOSTag == null) {
                     unrecognizedWords_.add(token.getTokenInflected());
+                } else {
+                    AddToPOSCluster(token);    
                 }
             }
         }
+    }
+
+    private boolean AddToPOSCluster(AnalyzedToken token) {
+        if (isAdjective(token)) {
+            adjectives_.add(token.getLemma());
+        } else if (isAdverb(token)) {
+            adverbs_.add(token.getLemma());
+        } else if (isVerb(token)) {
+            verbs_.add(token.getLemma());
+        } else {
+            return false;
+        }
+        return true;
     }
 
     private boolean isAdjective(AnalyzedToken token) {
@@ -172,7 +180,7 @@ public class Dictionary {
 
     private Set GetSetOfWordsFromString(String fileChunk) {
         Set words = new HashSet();
-        String[] tokens = fileChunk.split("[\\s.,!:;()-?]");
+        String[] tokens = fileChunk.split("[\\s.,!:;”„\"()-?']");
 
         for (String token : tokens) {
             if (token.length() > 1) {

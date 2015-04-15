@@ -102,6 +102,7 @@ răsări
 pohti
 urma
 săra
+afirma
 curteni
 trăi
 crede
@@ -301,6 +302,7 @@ ajunge
 crunta
 mărturisi
 bizui
+delega
 certa
 lumina
 astruca
@@ -703,6 +705,7 @@ apuca
 cântări
 ascunde
 sta
+colinda
 vedea
 roade
 pogorî
@@ -774,8 +777,8 @@ asedia
 munci
 rădica
 tocmi
-urca
 proba
+urca
 înfrâna
 ierta
 nenoroci
