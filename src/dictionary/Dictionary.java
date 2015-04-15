@@ -99,7 +99,7 @@ public class Dictionary {
             }
         } while (chunk != null);
         
-       // ApplyFiltersAndNormalizationOnUnrecognizedWords();
+        ApplyFiltersAndNormalizationOnUnrecognizedWords();
     }
     /**
      * This function should be called after the POS Tagging is done.
@@ -109,7 +109,35 @@ public class Dictionary {
      * to the list of which it belongs.
      */
     public void ApplyFiltersAndNormalizationOnUnrecognizedWords() {
+        NormalizeHyphenatedWords();
         ExtractProperNouns();
+    }
+    
+    private void NormalizeHyphenatedWords() {
+        Set <String> normalizedWords = new HashSet<>();
+        String[] splitWord ; // = chunk.split("[\\s.,!'-]");
+        
+        for(String word : unrecognizedWords_) {
+            if(word.contains("­")) {
+                splitWord = word.split("[\\s­]");
+                if(splitWord.length < 2) {
+                    normalizedWords.add(splitWord[0]);
+                } else {
+                    normalizedWords.add(splitWord[0] + splitWord[1]);
+                } 
+            }
+        }
+        Iterator<String> iterator = unrecognizedWords_.iterator();
+        while(iterator.hasNext()) {
+            String word = iterator.next();
+            if(word.contains("­")) {
+                iterator.remove();
+            }
+        }
+        
+        for(String word : normalizedWords) {
+            unrecognizedWords_.add(word);
+        }
     }
     
     private void ExtractProperNouns() {
@@ -130,6 +158,7 @@ public class Dictionary {
         System.out.println("No of adjectives = " + adjectives_.size());
         System.out.println("No of adverbs = " + adverbs_.size());
         System.out.println("No of verbs = " + verbs_.size());
+        System.out.println("No of proper nouns = " + properNouns_.size());
         System.out.println("No of unrecognized words = " + unrecognizedWords_.size());
 
         // Write the Set of adjectives to the adjectives file.
