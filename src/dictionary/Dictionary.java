@@ -38,7 +38,7 @@ public class Dictionary {
      * @throws FileNotFoundException
      */
     public Dictionary(Corpus corpus, String adjectivesFile, String adverbsFile,
-            String verbsFile, String unrecognizedWordsFile)
+            String verbsFile, String properNounsFile, String unrecognizedWordsFile)
             throws FileNotFoundException {
 
         corpus_ = corpus;
@@ -56,6 +56,11 @@ public class Dictionary {
         outputStreamWriter = new OutputStreamWriter(
                 stream, Charset.forName("UTF-8"));
         writerForVerbs_ = new BufferedWriter(outputStreamWriter);
+        
+        stream = new FileOutputStream(properNounsFile);
+        outputStreamWriter = new OutputStreamWriter(
+                stream, Charset.forName("UTF-8"));
+        writerForProperNouns_ = new BufferedWriter(outputStreamWriter);
 
         stream = new FileOutputStream(unrecognizedWordsFile);
         outputStreamWriter = new OutputStreamWriter(
@@ -67,6 +72,7 @@ public class Dictionary {
         adverbs_ = new HashSet();
         verbs_ = new HashSet();
         unrecognizedWords_ = new HashSet();
+        properNouns_ = new HashSet();
     }
 
     public void POSTag(String fileChunk) throws IOException {
@@ -92,9 +98,33 @@ public class Dictionary {
                 this.POSTag(chunk);
             }
         } while (chunk != null);
+        
+       // ApplyFiltersAndNormalizationOnUnrecognizedWords();
+    }
+    /**
+     * This function should be called after the POS Tagging is done.
+     * It takes the list of unrecognized words and tries to normalize
+     * the words in order to be recognized by the LanguageTagger.
+     * All the identified words will be moved from the unrecognized list
+     * to the list of which it belongs.
+     */
+    public void ApplyFiltersAndNormalizationOnUnrecognizedWords() {
+        ExtractProperNouns();
+    }
+    
+    private void ExtractProperNouns() {
+        for(String word : unrecognizedWords_) {
+            if(Character.isUpperCase(word.charAt(0))) {
+                properNouns_.add(word);  
+            }
+        }
+        
+        for(String word : properNouns_) {
+            unrecognizedWords_.remove(word);
+        }
     }
 
-    public void writeTaggedWordsToFiles() throws IOException {
+    public void writeDictionaryToFiles() throws IOException {
         Iterator iterator = adjectives_.iterator();
         String newLine = "\n";
         System.out.println("No of adjectives = " + adjectives_.size());
@@ -121,6 +151,14 @@ public class Dictionary {
             writerForVerbs_.write((String) iterator.next());
             writerForVerbs_.write(newLine);
         }
+        
+        // Write the Set of proper nouns to the proper nouns file.
+        iterator = properNouns_.iterator();
+        while (iterator.hasNext()) {
+            writerForProperNouns_.write((String) iterator.next());
+            writerForProperNouns_.write(newLine);
+        }
+
 
         // Write the Set of unrecognized words to the unrecognized words file.
         iterator = unrecognizedWords_.iterator();
@@ -190,13 +228,15 @@ public class Dictionary {
         return words;
     }
 
-    private final Set adjectives_;
-    private final Set adverbs_;
-    private final Set verbs_;
-    private final Set unrecognizedWords_;
+    private final Set <String> adjectives_;
+    private final Set <String> adverbs_;
+    private final Set <String> verbs_;
+    private final Set <String> unrecognizedWords_;
+    private final Set <String> properNouns_;
     private final BufferedWriter writerForAdjectives_;
     private final BufferedWriter writerForAdverbs_;
     private final BufferedWriter writerForVerbs_;
+    private final BufferedWriter writerForProperNouns_;
     private final BufferedWriter writerForUnrecognizedWords_;
     private final RomanianTagger romanianTagger_;
     private final Corpus corpus_;

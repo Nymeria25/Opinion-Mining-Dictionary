@@ -44,10 +44,10 @@ public class BuildDictionary {
         try {
             Corpus corp = new Corpus("cantemir.txt", "ureche.txt", "costin.txt");
             Dictionary dictionary = new Dictionary(corp, "adjectives_list.txt",
-                    "adverbs_list.txt", "verbs_list.txt",
+                    "adverbs_list.txt", "verbs_list.txt", "proper_nouns_list.txt",
                     "unrecognized_words_list.txt");
             dictionary.CreateDictionary();
-            dictionary.writeTaggedWordsToFiles();
+            dictionary.writeDictionaryToFiles();
 
         } catch (FileNotFoundException ex) {
             Logger.getLogger(BuildDictionary.class.getName()).log(Level.SEVERE, null, ex);
