@@ -110,7 +110,39 @@ public class Dictionary {
      */
     public void ApplyFiltersAndNormalizationOnUnrecognizedWords() {
         NormalizeHyphenatedWords();
+        StripAccents();
         ExtractProperNouns();
+    }
+    
+    private void StripAccents() {
+        Iterator<String> iterator = unrecognizedWords_.iterator();
+        Set<String> strippedWords = new HashSet<>();
+        
+        while(iterator.hasNext()) {
+            String word = iterator.next();
+            String strippedWord = "";
+            boolean stripped = false;
+            
+            for(int i=0; i<word.length(); i++) {
+                char letter = word.charAt(i);
+                if(letter == 'ŭ') {
+                    stripped = true;
+                    strippedWord += "u";
+                } else if(letter == 'é' || letter == 'è') {
+                    stripped = true;
+                    strippedWord += 'e';
+                } else {
+                    strippedWord += letter;
+                }
+            }
+            
+          if(stripped) {
+              iterator.remove();
+              strippedWords.add(strippedWord);
+          }
+        }
+        
+        unrecognizedWords_.addAll(strippedWords);
     }
     
     private void NormalizeHyphenatedWords() {
@@ -135,9 +167,7 @@ public class Dictionary {
             }
         }
         
-        for(String word : normalizedWords) {
-            unrecognizedWords_.add(word);
-        }
+        unrecognizedWords_.addAll(normalizedWords);
     }
     
     private void ExtractProperNouns() {
