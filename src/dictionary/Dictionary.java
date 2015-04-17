@@ -56,7 +56,7 @@ public class Dictionary {
         outputStreamWriter = new OutputStreamWriter(
                 stream, Charset.forName("UTF-8"));
         writerForVerbs_ = new BufferedWriter(outputStreamWriter);
-        
+
         stream = new FileOutputStream(properNounsFile);
         outputStreamWriter = new OutputStreamWriter(
                 stream, Charset.forName("UTF-8"));
@@ -73,12 +73,15 @@ public class Dictionary {
         verbs_ = new HashSet();
         unrecognizedWords_ = new HashSet();
         properNouns_ = new HashSet();
+        
+        totalNoWords_ = 0;
     }
 
     public void POSTag(String fileChunk) throws IOException {
         // Use a Set for ensuring there are no multiple appearances
         // of the same word.
         Set words = GetSetOfWordsFromString(fileChunk);
+        totalNoWords_ += words.size();
 
         // The tag function of the RomanianTagger requires a List.
         List<String> listOfWords = new ArrayList<>(words);
@@ -98,86 +101,139 @@ public class Dictionary {
                 this.POSTag(chunk);
             }
         } while (chunk != null);
-        
+
         ApplyFiltersAndNormalizationOnUnrecognizedWords();
     }
+
     /**
-     * This function should be called after the POS Tagging is done.
-     * It takes the list of unrecognized words and tries to normalize
-     * the words in order to be recognized by the LanguageTagger.
-     * All the identified words will be moved from the unrecognized list
-     * to the list of which it belongs.
+     * This function should be called after the POS Tagging is done. It takes
+     * the list of unrecognized words and tries to normalize the words in order
+     * to be recognized by the LanguageTagger. All the identified words will be
+     * moved from the unrecognized list to the list of which it belongs.
+     * @throws java.io.IOException
      */
-    public void ApplyFiltersAndNormalizationOnUnrecognizedWords() {
-        NormalizeHyphenatedWords();
-        StripAccents();
-        ExtractProperNouns();
-    }
-    
-    private void StripAccents() {
+    public void ApplyFiltersAndNormalizationOnUnrecognizedWords()
+            throws IOException {
+        Set<String> normalizedWords = new HashSet<>();
         Iterator<String> iterator = unrecognizedWords_.iterator();
-        Set<String> strippedWords = new HashSet<>();
-        
-        while(iterator.hasNext()) {
+
+        String normalizedWord;
+
+        while (iterator.hasNext()) {
             String word = iterator.next();
-            String strippedWord = "";
-            boolean stripped = false;
+            normalizedWord = NormalizeIfHyphenatedWord(word);
+            normalizedWord = StripAccentsOfWord(normalizedWord);
+            normalizedWord = RemoveFinalUInWord(normalizedWord);
+            normalizedWord = DzGroupToZInWord(normalizedWord);
+            normalizedWord = IiGroupToIInWord(normalizedWord);
             
-            for(int i=0; i<word.length(); i++) {
-                char letter = word.charAt(i);
-                if(letter == 'ŭ') {
-                    stripped = true;
-                    strippedWord += "u";
-                } else if(letter == 'é' || letter == 'è') {
-                    stripped = true;
-                    strippedWord += 'e';
-                } else {
-                    strippedWord += letter;
-                }
-            }
-            
-          if(stripped) {
-              iterator.remove();
-              strippedWords.add(strippedWord);
-          }
-        }
-        
-        unrecognizedWords_.addAll(strippedWords);
-    }
-    
-    private void NormalizeHyphenatedWords() {
-        Set <String> normalizedWords = new HashSet<>();
-        String[] splitWord ; // = chunk.split("[\\s.,!'-]");
-        
-        for(String word : unrecognizedWords_) {
-            if(word.contains("­")) {
-                splitWord = word.split("[\\s­]");
-                if(splitWord.length < 2) {
-                    normalizedWords.add(splitWord[0]);
-                } else {
-                    normalizedWords.add(splitWord[0] + splitWord[1]);
-                } 
-            }
-        }
-        Iterator<String> iterator = unrecognizedWords_.iterator();
-        while(iterator.hasNext()) {
-            String word = iterator.next();
-            if(word.contains("­")) {
-                iterator.remove();
-            }
+            normalizedWords.add(normalizedWord);
+            iterator.remove();
         }
         
         unrecognizedWords_.addAll(normalizedWords);
+
+        ExtractProperNouns();
+        POSTagUnrecognizedWords();
+
     }
-    
-    private void ExtractProperNouns() {
-        for(String word : unrecognizedWords_) {
-            if(Character.isUpperCase(word.charAt(0))) {
-                properNouns_.add(word);  
+
+    private String NormalizeIfHyphenatedWord(String word) {
+        String[] splitWord;
+        if (word.contains("­")) {
+            splitWord = word.split("[\\s­]");
+            if (splitWord.length < 2) {
+                return splitWord[0];
+            } else {
+                return (splitWord[0] + splitWord[1]);
+            }
+        } else {
+            return word;
+        }
+    }
+
+    private String StripAccentsOfWord(String word) {
+        String strippedWord = "";
+        boolean stripped = false;
+
+        for (int i = 0; i < word.length(); i++) {
+            char letter = word.charAt(i);
+            if (letter == 'ŭ') {
+                stripped = true;
+                strippedWord += "u";
+            } else if (letter == 'é' || letter == 'è') {
+                stripped = true;
+                strippedWord += 'e';
+            } else {
+                strippedWord += letter;
             }
         }
-        
-        for(String word : properNouns_) {
+
+        if (stripped) {
+            return strippedWord;
+        } else {
+            return word;
+        }
+    }
+
+    private String RemoveFinalUInWord(String word) {
+        if (word.endsWith("u") && word.length() > 2) {
+            if (HasConsonantBeforeLastLetter(word)) {
+                return word.substring(0, word.length() - 1);
+            }
+        }
+        return word;
+    }
+
+    private String DzGroupToZInWord(String word) {
+        int index;
+
+        if (word.contains("dz")) {
+            index = word.indexOf("dz");
+            return (word.substring(0, index) + word.substring(
+                    index + 1, word.length()));
+        } else {
+            return word;
+        }
+    }
+    
+    private String IiGroupToIInWord(String word) {
+        int index;
+
+        if (word.contains("ii")) {
+            index = word.indexOf("ii");
+            return (word.substring(0, index) + word.substring(
+                    index + 1, word.length()));
+        } else {
+            return word;
+        }
+    }
+
+    private void POSTagUnrecognizedWords() throws IOException {
+        String chunk = unrecognizedWords_.toString();
+        unrecognizedWords_.clear();
+        this.POSTag(chunk);
+    }
+
+    private boolean HasConsonantBeforeLastLetter(String word) {
+        String vowels = "aeiouăâ";
+        char letter = word.charAt(word.length() - 2);
+
+        if (vowels.contains(String.valueOf(letter))) {
+            return false;
+        }
+
+        return true;
+    }
+
+    private void ExtractProperNouns() {
+        for (String word : unrecognizedWords_) {
+            if (Character.isUpperCase(word.charAt(0))) {
+                properNouns_.add(word);
+            }
+        }
+
+        for (String word : properNouns_) {
             unrecognizedWords_.remove(word);
         }
     }
@@ -190,6 +246,7 @@ public class Dictionary {
         System.out.println("No of verbs = " + verbs_.size());
         System.out.println("No of proper nouns = " + properNouns_.size());
         System.out.println("No of unrecognized words = " + unrecognizedWords_.size());
+        System.out.println("Total no of words (singular occurence) = " + totalNoWords_);
 
         // Write the Set of adjectives to the adjectives file.
         while (iterator.hasNext()) {
@@ -210,14 +267,13 @@ public class Dictionary {
             writerForVerbs_.write((String) iterator.next());
             writerForVerbs_.write(newLine);
         }
-        
+
         // Write the Set of proper nouns to the proper nouns file.
         iterator = properNouns_.iterator();
         while (iterator.hasNext()) {
             writerForProperNouns_.write((String) iterator.next());
             writerForProperNouns_.write(newLine);
         }
-
 
         // Write the Set of unrecognized words to the unrecognized words file.
         iterator = unrecognizedWords_.iterator();
@@ -240,7 +296,7 @@ public class Dictionary {
                 if (tokenPOSTag == null) {
                     unrecognizedWords_.add(token.getTokenInflected());
                 } else {
-                    AddToPOSCluster(token);    
+                    AddToPOSCluster(token);
                 }
             }
         }
@@ -287,11 +343,11 @@ public class Dictionary {
         return words;
     }
 
-    private final Set <String> adjectives_;
-    private final Set <String> adverbs_;
-    private final Set <String> verbs_;
-    private final Set <String> unrecognizedWords_;
-    private final Set <String> properNouns_;
+    private final Set<String> adjectives_;
+    private final Set<String> adverbs_;
+    private final Set<String> verbs_;
+    private final Set<String> unrecognizedWords_;
+    private final Set<String> properNouns_;
     private final BufferedWriter writerForAdjectives_;
     private final BufferedWriter writerForAdverbs_;
     private final BufferedWriter writerForVerbs_;
@@ -299,4 +355,5 @@ public class Dictionary {
     private final BufferedWriter writerForUnrecognizedWords_;
     private final RomanianTagger romanianTagger_;
     private final Corpus corpus_;
+    private int totalNoWords_;
 }

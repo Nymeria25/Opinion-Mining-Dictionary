@@ -30,6 +30,7 @@ decât
 slavonește
 bărbătește
 jalnic
+țigănește
 decis
 deodată
 mai
@@ -78,11 +79,14 @@ nicăieri
 maxim
 orbește
 greșit
+ungurește
 nimic
 turcește
 nicăirea
 da
 adeseori
+rusește
+românește
 încât
 groaznic
 plăcut
@@ -130,6 +134,7 @@ odinioară
 destul
 rău
 acia
+flămând
 îndată
 îndemână
 puțin
@@ -171,6 +176,7 @@ sigur
 ori
 istoric
 oarecând
+creștinește
 grozav
 pretutindeni
 alocurea
@@ -179,6 +185,8 @@ doară
 împreună
 tocmai
 scump
+nemțește
+atunce
 post
 adevărat
 deoparte
@@ -245,6 +253,7 @@ deasupra
 aiurea
 stăpânit
 proaspăt
+trist
 și
 aci
 înlăuntru

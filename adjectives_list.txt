@@ -150,14 +150,18 @@ mult
 oriental
 milostiv
 mâhnit
+repezit
 nepotrivit
 lipit
 crescut
 înglodat
+trăgănat
 întrebat
 nesmintit
 nenorocit
+muls
 despicat
+răcit
 trezit
 sărac
 ridicat
@@ -186,9 +190,11 @@ zis
 propus
 smintit
 obicinuit
+dobrogean
 țărănesc
 îngrădit
 plat
+ațâțat
 luminat
 bătrân
 arăpesc
@@ -198,12 +204,16 @@ tânăr
 jeluit
 născut
 latinesc
+rătund
+vecinic
 singuratec
 rumânesc
 cunoscător
 schimbat
 fericit
 îmbrăcat
+muncit
+oltean
 puternic
 valah
 obez
@@ -221,12 +231,14 @@ așezat
 nogai
 neștiut
 cumpărat
+brașovean
 închipuit
 râvnitor
 rus
 liniștit
 crunt
 pizmaș
+flămânzit
 drept
 vătămat
 boreal
@@ -286,6 +298,7 @@ pravoslavnic
 renumit
 stătut
 nărod
+botezat
 introdus
 răscumpărat
 omenesc
@@ -302,6 +315,7 @@ răzbit
 îndesat
 imperial
 asudat
+zădarnic
 îmbogățit
 vârtos
 indigen
@@ -337,6 +351,7 @@ sigur
 istoric
 ajutător
 cerut
+bârfitor
 subțire
 folositor
 prob
@@ -372,6 +387,7 @@ neadevărat
 surd
 sabin
 mare
+neînduplecat
 mândru
 roș
 purtat
@@ -379,12 +395,14 @@ format
 rotund
 galben
 nătâng
+binecuvântat
 îndelung
 potolit
 nebiruit
 tras
 ostenit
 muiat
+cucernic
 gândit
 cald
 aprins
@@ -404,6 +422,7 @@ navigabil
 lin
 șters
 vrăjmaș
+ceresc
 scit
 văduv
 făcător
@@ -411,11 +430,13 @@ voinic
 ferecat
 sumeț
 desfătat
+neastâmpărat
 băutor
 îndoit
 rușinat
 amănunt
 boieresc
+însărcinat
 strămutat
 fățarnic
 zidit
@@ -438,6 +459,7 @@ despotic
 aruncat
 roditor
 norocos
+înălțat
 împărțit
 biruit
 artificial
@@ -457,6 +479,7 @@ vinovat
 puțintel
 poftit
 beat
+frânt
 dârz
 călduros
 mănunt
@@ -467,6 +490,7 @@ conform
 arnăuțesc
 cuprins
 voios
+temeinic
 deplin
 dospit
 cioplit
@@ -561,6 +585,7 @@ fugit
 ușor
 descoperit
 pătrunzător
+oblăduitor
 bărbat
 stâng
 năsâlnic
@@ -600,6 +625,7 @@ citit
 norocit
 îndrăzneț
 ungar
+năvălitor
 orânduit
 plecat
 strașnic
@@ -629,6 +655,7 @@ pârjolit
 venețian
 inimic
 dezbrăcat
+supărat
 împrăștiat
 naval
 nevrednic
@@ -683,6 +710,7 @@ otrăvit
 răspândit
 străin
 înecat
+prelungit
 decis
 întărit
 necrezut
@@ -730,6 +758,7 @@ leneș
 rupt
 avut
 mărunt
+monahicesc
 spus
 natural
 dezmierdat
@@ -739,6 +768,7 @@ bănesc
 învățat
 încruntat
 întunecos
+nemăsurat
 împrumutat
 sărit
 apus
@@ -785,6 +815,7 @@ căznit
 crud
 mărginit
 sănătos
+isteț
 desăvârșit
 protivnic
 tăinuit
@@ -813,7 +844,9 @@ intim
 tăiat
 armat
 sătul
+gâlcevitor
 scutit
+orb
 mic
 nepipăit
 amestecat
@@ -868,11 +901,13 @@ nestrăbătut
 potcovit
 aiurea
 troian
+trist
 arhieresc
 ilustrat
 sârbesc
 bulgar
 literar
+trudit
 domestic
 ciut
 petrecător
