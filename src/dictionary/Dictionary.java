@@ -52,11 +52,46 @@ public class Dictionary {
         InitializeMetricsValues(); 
     }
     
-    public void PrintWordNetDomainsForEntireDictionary() {
-        
-        for(String word: nouns_) {
-            System.out.println(word + " : " + getWordNetDomain(word));
+    private void FilterByPolarity(Iterator<String> iterator) {
+        String word;
+
+        while (iterator.hasNext()) {
+            word = iterator.next();
+            if(!MayHoldPolarity(word)) {
+                iterator.remove();
+            }
         }
+    }
+    public void ApplyWordNetFiltering() {
+        
+        Iterator<String> iterator = adjectives_.iterator();
+        FilterByPolarity(iterator);
+        
+        iterator = adverbs_.iterator();
+        FilterByPolarity(iterator);
+        
+        iterator = verbs_.iterator();
+        FilterByPolarity(iterator);
+        
+        iterator = nouns_.iterator();
+        FilterByPolarity(iterator);
+    }
+    
+    public boolean MayHoldPolarity(String lemma) {
+        String domain = getWordNetDomain(lemma);
+        
+        if(domain == null ) { //|| domain.contentEquals("")) {
+            return true;
+        } else if(domain.contentEquals("factotum") || domain.
+                contentEquals("quality") || domain.contentEquals("person")) {
+            return true;
+        } else if(domain.contentEquals("sociology") || domain.
+                contentEquals("law") || domain.contentEquals("betting") || 
+                domain.contentEquals("enterprise")) {
+            return true;
+        }
+        
+        return false;
     }
     
    
@@ -87,7 +122,7 @@ public class Dictionary {
         } while (chunk != null);
 
         ApplyFiltersAndNormalizationOnUnrecognizedWords();
-        PrintWordNetDomainsForEntireDictionary();
+        ApplyWordNetFiltering();
     }
 
     /**
@@ -384,6 +419,7 @@ public class Dictionary {
         String posTag = token.getPOSTag();
         return posTag.startsWith("S");
     }
+
 
     public Set GetSetOfWordsFromString(String fileChunk) {
         Set words = new HashSet();
