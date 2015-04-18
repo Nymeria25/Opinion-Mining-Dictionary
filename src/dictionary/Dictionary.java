@@ -5,6 +5,9 @@
  */
 package dictionary;
 
+import data.Literal;
+import data.RoWordNet;
+import data.Synset;
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -40,44 +43,23 @@ public class Dictionary {
      */
     public Dictionary(Corpus corpus, String adjectivesFile, String adverbsFile,
             String verbsFile, String properNounsFile, String unrecognizedWordsFile)
-            throws FileNotFoundException {
+            throws FileNotFoundException, Exception {
 
         corpus_ = corpus;
-        OutputStream stream = new FileOutputStream(adjectivesFile);
-        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(
-                stream, Charset.forName("UTF-8"));
-        writerForAdjectives_ = new BufferedWriter(outputStreamWriter);
-
-        stream = new FileOutputStream(adverbsFile);
-        outputStreamWriter = new OutputStreamWriter(
-                stream, Charset.forName("UTF-8"));
-        writerForAdverbs_ = new BufferedWriter(outputStreamWriter);
-
-        stream = new FileOutputStream(verbsFile);
-        outputStreamWriter = new OutputStreamWriter(
-                stream, Charset.forName("UTF-8"));
-        writerForVerbs_ = new BufferedWriter(outputStreamWriter);
-
-        stream = new FileOutputStream(properNounsFile);
-        outputStreamWriter = new OutputStreamWriter(
-                stream, Charset.forName("UTF-8"));
-        writerForProperNouns_ = new BufferedWriter(outputStreamWriter);
-
-        stream = new FileOutputStream(unrecognizedWordsFile);
-        outputStreamWriter = new OutputStreamWriter(
-                stream, Charset.forName("UTF-8"));
-        writerForUnrecognizedWords_ = new BufferedWriter(outputStreamWriter);
-
-        romanianTagger_ = new RomanianTagger();
-        adjectives_ = new HashSet();
-        adverbs_ = new HashSet();
-        verbs_ = new HashSet();
-        unrecognizedWords_ = new HashSet();
-        properNouns_ = new HashSet();
-        
-        totalNoWords_ = 0;
-        totalNoNouns_ = 0;
+        InitializeBufferedWriters(adjectivesFile, adverbsFile, verbsFile,
+                properNounsFile, unrecognizedWordsFile);
+        AllocateMembers();
+        InitializeMetricsValues(); 
     }
+    
+    public void PrintWordNetDomainsForEntireDictionary() {
+        
+        for(String word: nouns_) {
+            System.out.println(word + " : " + getWordNetDomain(word));
+        }
+    }
+    
+   
 
     public void POSTag(String fileChunk) throws IOException {
         // Use a Set for ensuring there are no multiple appearances
@@ -105,6 +87,7 @@ public class Dictionary {
         } while (chunk != null);
 
         ApplyFiltersAndNormalizationOnUnrecognizedWords();
+        PrintWordNetDomainsForEntireDictionary();
     }
 
     /**
@@ -138,6 +121,116 @@ public class Dictionary {
         ExtractProperNouns();
         POSTagUnrecognizedWords();
 
+    }
+    
+     public void writeDictionaryToFiles() throws IOException {
+        Iterator iterator = adjectives_.iterator();
+        String newLine = "\n";
+        System.out.println("No of adjectives = " + adjectives_.size());
+        System.out.println("No of adverbs = " + adverbs_.size());
+        System.out.println("No of verbs = " + verbs_.size());
+        System.out.println("No of common nouns = " + nouns_.size());
+        System.out.println("No of proper nouns = " + properNouns_.size());
+        System.out.println("No of unrecognized words = " + unrecognizedWords_.size());
+        System.out.println("Total no of words (singular occurence) = " + totalNoWords_);
+
+        // Write the Set of adjectives to the adjectives file.
+        while (iterator.hasNext()) {
+            writerForAdjectives_.write((String) iterator.next());
+            writerForAdjectives_.write(newLine);
+        }
+
+        // Write the Set of adverbs to the adverbs file.
+        iterator = adverbs_.iterator();
+        while (iterator.hasNext()) {
+            writerForAdverbs_.write((String) iterator.next());
+            writerForAdverbs_.write(newLine);
+        }
+
+        // Write the Set of verbs to the verbs file.
+        iterator = verbs_.iterator();
+        while (iterator.hasNext()) {
+            writerForVerbs_.write((String) iterator.next());
+            writerForVerbs_.write(newLine);
+        }
+
+        // Write the Set of proper nouns to the proper nouns file.
+        iterator = properNouns_.iterator();
+        while (iterator.hasNext()) {
+            writerForProperNouns_.write((String) iterator.next());
+            writerForProperNouns_.write(newLine);
+        }
+
+        // Write the Set of unrecognized words to the unrecognized words file.
+        iterator = unrecognizedWords_.iterator();
+        while (iterator.hasNext()) {
+            writerForUnrecognizedWords_.write((String) iterator.next());
+            writerForUnrecognizedWords_.write(newLine);
+        }
+
+        writerForAdjectives_.close();
+        writerForAdverbs_.close();
+        writerForVerbs_.close();
+        writerForUnrecognizedWords_.close();
+    }
+    
+     private void InitializeMetricsValues() {
+        totalNoWords_ = 0;
+    }
+     
+    public String getWordNetDomain(String word) {
+        Literal literal = new Literal(word);
+        Synset firstSynset;
+        String result = "";
+                
+        if( roWordNet_.getSynsetsFromLiteral(literal).size() > 0) {
+            firstSynset = roWordNet_.getSynsetsFromLiteral(literal).get(0);
+            if(firstSynset != null) {
+                result = firstSynset.getDomain();
+            }
+        }
+        
+        return result;
+    }
+    
+    private void AllocateMembers() throws Exception {
+        romanianTagger_ = new RomanianTagger();
+        roWordNet_ = RoWordNet.deserializeFromFile("wordnet-resources\\RoWordNet.data");
+        adjectives_ = new HashSet();
+        adverbs_ = new HashSet();
+        verbs_ = new HashSet();
+        unrecognizedWords_ = new HashSet();
+        properNouns_ = new HashSet();
+        nouns_ = new HashSet();
+    }
+    
+    private void InitializeBufferedWriters(String adjectivesFile, String adverbsFile,
+            String verbsFile, String properNounsFile, String unrecognizedWordsFile) 
+            throws FileNotFoundException {
+        OutputStream stream = new FileOutputStream(adjectivesFile);
+        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(
+                stream, Charset.forName("UTF-8"));
+        writerForAdjectives_ = new BufferedWriter(outputStreamWriter);
+
+        stream = new FileOutputStream(adverbsFile);
+        outputStreamWriter = new OutputStreamWriter(
+                stream, Charset.forName("UTF-8"));
+        writerForAdverbs_ = new BufferedWriter(outputStreamWriter);
+
+        stream = new FileOutputStream(verbsFile);
+        outputStreamWriter = new OutputStreamWriter(
+                stream, Charset.forName("UTF-8"));
+        writerForVerbs_ = new BufferedWriter(outputStreamWriter);
+
+        stream = new FileOutputStream(properNounsFile);
+        outputStreamWriter = new OutputStreamWriter(
+                stream, Charset.forName("UTF-8"));
+        writerForProperNouns_ = new BufferedWriter(outputStreamWriter);
+
+        stream = new FileOutputStream(unrecognizedWordsFile);
+        outputStreamWriter = new OutputStreamWriter(
+                stream, Charset.forName("UTF-8"));
+        writerForUnrecognizedWords_ = new BufferedWriter(outputStreamWriter);
     }
 
     private String NormalizeIfHyphenatedWord(String word) {
@@ -240,57 +333,6 @@ public class Dictionary {
         }
     }
 
-    public void writeDictionaryToFiles() throws IOException {
-        Iterator iterator = adjectives_.iterator();
-        String newLine = "\n";
-        System.out.println("No of adjectives = " + adjectives_.size());
-        System.out.println("No of adverbs = " + adverbs_.size());
-        System.out.println("No of verbs = " + verbs_.size());
-        System.out.println("No of common nouns = " + totalNoNouns_);
-        System.out.println("No of proper nouns = " + properNouns_.size());
-        System.out.println("No of unrecognized words = " + unrecognizedWords_.size());
-        System.out.println("Total no of words (singular occurence) = " + totalNoWords_);
-
-        // Write the Set of adjectives to the adjectives file.
-        while (iterator.hasNext()) {
-            writerForAdjectives_.write((String) iterator.next());
-            writerForAdjectives_.write(newLine);
-        }
-
-        // Write the Set of adverbs to the adverbs file.
-        iterator = adverbs_.iterator();
-        while (iterator.hasNext()) {
-            writerForAdverbs_.write((String) iterator.next());
-            writerForAdverbs_.write(newLine);
-        }
-
-        // Write the Set of verbs to the verbs file.
-        iterator = verbs_.iterator();
-        while (iterator.hasNext()) {
-            writerForVerbs_.write((String) iterator.next());
-            writerForVerbs_.write(newLine);
-        }
-
-        // Write the Set of proper nouns to the proper nouns file.
-        iterator = properNouns_.iterator();
-        while (iterator.hasNext()) {
-            writerForProperNouns_.write((String) iterator.next());
-            writerForProperNouns_.write(newLine);
-        }
-
-        // Write the Set of unrecognized words to the unrecognized words file.
-        iterator = unrecognizedWords_.iterator();
-        while (iterator.hasNext()) {
-            writerForUnrecognizedWords_.write((String) iterator.next());
-            writerForUnrecognizedWords_.write(newLine);
-        }
-
-        writerForAdjectives_.close();
-        writerForAdverbs_.close();
-        writerForVerbs_.close();
-        writerForUnrecognizedWords_.close();
-    }
-
     private void ClusterByPOSCategory(List<AnalyzedTokenReadings> wordTags) {
 
         for (AnalyzedTokenReadings analyzedTokenReadings : wordTags) {
@@ -313,7 +355,8 @@ public class Dictionary {
         } else if (isVerb(token)) {
             verbs_.add(token.getLemma());
         } else if (isNoun(token)){
-            totalNoNouns_++;
+            nouns_.add(token.getLemma());
+           // System.out.println(token.getLemma() + " : " + getWordNetDomain(token.getLemma()));
         }
         else {
             return false;
@@ -321,28 +364,28 @@ public class Dictionary {
         return true;
     }
 
-    private boolean isAdjective(AnalyzedToken token) {
+    public boolean isAdjective(AnalyzedToken token) {
         String posTag = token.getPOSTag();
         return posTag.startsWith("A");
     }
 
-    private boolean isAdverb(AnalyzedToken token) {
+    public boolean isAdverb(AnalyzedToken token) {
         String posTag = token.getPOSTag();
         // TODO: make sure it is correct!!
         return posTag.startsWith("G");
     }
 
-    private boolean isVerb(AnalyzedToken token) {
+    public boolean isVerb(AnalyzedToken token) {
         String posTag = token.getPOSTag();
         return posTag.startsWith("V");
     }
     
-    private boolean isNoun(AnalyzedToken token) {
+    public boolean isNoun(AnalyzedToken token) {
         String posTag = token.getPOSTag();
         return posTag.startsWith("S");
     }
 
-    private Set GetSetOfWordsFromString(String fileChunk) {
+    public Set GetSetOfWordsFromString(String fileChunk) {
         Set words = new HashSet();
         String[] tokens = fileChunk.split("[\\s.,!:;”„\"()-?']");
 
@@ -354,18 +397,19 @@ public class Dictionary {
         return words;
     }
 
-    private final Set<String> adjectives_;
-    private final Set<String> adverbs_;
-    private final Set<String> verbs_;
-    private final Set<String> unrecognizedWords_;
-    private final Set<String> properNouns_;
-    private final BufferedWriter writerForAdjectives_;
-    private final BufferedWriter writerForAdverbs_;
-    private final BufferedWriter writerForVerbs_;
-    private final BufferedWriter writerForProperNouns_;
-    private final BufferedWriter writerForUnrecognizedWords_;
-    private final RomanianTagger romanianTagger_;
+    private Set<String> adjectives_;
+    private Set<String> adverbs_;
+    private Set<String> verbs_;
+    private Set<String> unrecognizedWords_;
+    private Set<String> properNouns_;
+    private Set<String> nouns_;
+    private BufferedWriter writerForAdjectives_;
+    private BufferedWriter writerForAdverbs_;
+    private BufferedWriter writerForVerbs_;
+    private BufferedWriter writerForProperNouns_;
+    private BufferedWriter writerForUnrecognizedWords_;
+    private RomanianTagger romanianTagger_;
+    private RoWordNet roWordNet_;
     private final Corpus corpus_;
     private int totalNoWords_;
-    private int totalNoNouns_;
 }

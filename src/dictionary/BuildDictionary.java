@@ -28,7 +28,7 @@ public class BuildDictionary {
      * @param args the command line arguments
      * @throws java.io.IOException
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, Exception {
 
         /*
          try {
@@ -41,7 +41,7 @@ public class BuildDictionary {
          
          testSplitter("Toată țara pe care o numim astăzi Moldova, împreună cu ținuturile învecinate de către apus.");
          */
-        try {
+        
             Corpus corp = new Corpus("cantemir.txt", "ureche.txt", "costin.txt");
             Dictionary dictionary = new Dictionary(corp, "adjectives_list.txt",
                     "adverbs_list.txt", "verbs_list.txt", "proper_nouns_list.txt",
@@ -49,9 +49,7 @@ public class BuildDictionary {
             dictionary.CreateDictionary();
             dictionary.writeDictionaryToFiles();
 
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(BuildDictionary.class.getName()).log(Level.SEVERE, null, ex);
-        }
+       
     }
 
     public static void testSplitter(String chunk) {
