@@ -30,10 +30,11 @@ public class Dictionary {
     /**
      *
      * @param corpus is the Corpus on top of which we build the dictionary.
-     * @param adjectivesFile is a String, the name of the adjectives file.
-     * @param adverbsFile is a String, the name of the adverbs file.
-     * @param verbsFile is a String, the name of the verbs file.
-     * @param unrecognizedWordsFile is a String, the name of the unrecognized
+     * @param adjectivesFile String, the name of the adjectives file.
+     * @param adverbsFile String, the name of the adverbs file.
+     * @param verbsFile String, the name of the verbs file.
+     * @param properNounsFile String, the name of the proper nouns file.
+     * @param unrecognizedWordsFile String, the name of the unrecognized
      * words file.
      * @throws FileNotFoundException
      */
@@ -75,6 +76,7 @@ public class Dictionary {
         properNouns_ = new HashSet();
         
         totalNoWords_ = 0;
+        totalNoNouns_ = 0;
     }
 
     public void POSTag(String fileChunk) throws IOException {
@@ -244,6 +246,7 @@ public class Dictionary {
         System.out.println("No of adjectives = " + adjectives_.size());
         System.out.println("No of adverbs = " + adverbs_.size());
         System.out.println("No of verbs = " + verbs_.size());
+        System.out.println("No of common nouns = " + totalNoNouns_);
         System.out.println("No of proper nouns = " + properNouns_.size());
         System.out.println("No of unrecognized words = " + unrecognizedWords_.size());
         System.out.println("Total no of words (singular occurence) = " + totalNoWords_);
@@ -309,7 +312,10 @@ public class Dictionary {
             adverbs_.add(token.getLemma());
         } else if (isVerb(token)) {
             verbs_.add(token.getLemma());
-        } else {
+        } else if (isNoun(token)){
+            totalNoNouns_++;
+        }
+        else {
             return false;
         }
         return true;
@@ -329,6 +335,11 @@ public class Dictionary {
     private boolean isVerb(AnalyzedToken token) {
         String posTag = token.getPOSTag();
         return posTag.startsWith("V");
+    }
+    
+    private boolean isNoun(AnalyzedToken token) {
+        String posTag = token.getPOSTag();
+        return posTag.startsWith("S");
     }
 
     private Set GetSetOfWordsFromString(String fileChunk) {
@@ -356,4 +367,5 @@ public class Dictionary {
     private final RomanianTagger romanianTagger_;
     private final Corpus corpus_;
     private int totalNoWords_;
+    private int totalNoNouns_;
 }
