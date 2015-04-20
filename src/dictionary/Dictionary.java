@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Dictionary is the class containing the lists of lemmas clustered by POS,
+ * unrecognized words, proper nouns and metrics for all the computed glossaries.
  */
 package dictionary;
 
@@ -77,7 +76,7 @@ public class Dictionary {
         FilterByPolarity(iterator);
     }
     
-    public boolean MayHoldPolarity(String lemma) {
+    private boolean MayHoldPolarity(String lemma) {
         String domain = getWordNetDomain(lemma);
         
         if(domain == null ) { //|| domain.contentEquals("")) {
@@ -90,7 +89,9 @@ public class Dictionary {
                 domain.contentEquals("enterprise")) {
             return true;
         }
-        
+        if(domain.contentEquals("")) {
+            noWordsWithNoWordnetDomain_++;
+        }
         return false;
     }
     
@@ -167,6 +168,8 @@ public class Dictionary {
         System.out.println("No of common nouns = " + nouns_.size());
         System.out.println("No of proper nouns = " + properNouns_.size());
         System.out.println("No of unrecognized words = " + unrecognizedWords_.size());
+        System.out.println("No of words without WordNet domain information = " + 
+                noWordsWithNoWordnetDomain_);
         System.out.println("Total no of words (singular occurence) = " + totalNoWords_);
 
         // Write the Set of adjectives to the adjectives file.
@@ -211,6 +214,7 @@ public class Dictionary {
     
      private void InitializeMetricsValues() {
         totalNoWords_ = 0;
+        noWordsWithNoWordnetDomain_ = 0;
     }
      
     public String getWordNetDomain(String word) {
@@ -448,4 +452,5 @@ public class Dictionary {
     private RoWordNet roWordNet_;
     private final Corpus corpus_;
     private int totalNoWords_;
+    private int noWordsWithNoWordnetDomain_;
 }
