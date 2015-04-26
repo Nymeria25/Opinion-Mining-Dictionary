@@ -1,0 +1,499 @@
+﻿Verde +1 axe 6,12,27,31
+Barbar -3 axe 3,5,7,10,11,15,24,25,29
+Viteaz +4 axe 1,4,7,10,19,23,29
+Ferit -1  axe 1,2,9,12
+Stricat -5 axe 3,4,7,8,9,24
+Nescris -2 axe 1,2,28,29,32
+Iscusit 4 axe 1,10,23,25,29,33
+Harnic 3 axe 1, 25,29,33
+Ales 4 axe 1,25,29
+Jalnic -4 axe 1,6,16,17
+Tipărit 2 axe 1,2,9,10,29
+Statornic 3 axe 1,2,4,8,16
+Semeț 3 axe 1,8,13,19,23,25
+Nespus -1 axe 2,5,9,28,32
+Strălucit 5 axe 1,2,12,13,23,29
+Greu -2 axe 1,2,6,10,23
+Copilăresc 1 axe 2,6,10,17,20,26
+Purtător 0 axe 2,16,26,32
+Necesar 0 axe 1,2,15,23
+Rătăcit -3 axe 1,2,6,11,33
+Public 1 axe 1,2,8,16,32
+Subjugat -3 axe 1,3,5,6,16,18,24
+Strâmb -3 axe 1,2,7,10,24,29,33
+Capital 4 axe 1,2,8,22,25,26,29,31,33
+Maxim 5 axe 1,2,13,25,26,31,33
+Strâmt -2 axe 1,2,12,16,28,31,32
+Jucăuș 3 axe 2,4,6,14,17,28,30
+Socotit 3 axe 1,2,10,11, 23
+Nenumărat 3 axe 1,2,16,23,26,29 
+Dac 0 axe 1,16,18, 
+Pestilențial -5 axe 
+Dat 0 axe
+Moldovean 0 axe
+Singur -1 axe
+Neplăcut -2 axe
+Limpede 2 axe
+Mulțumit 3 axe
+Boltit 0 axe
+Ilar -2 axe
+Însemnat 2 axe
+Rar 1 axe
+Întemeiat 1 axe
+Ras -2 axe
+Sfârșit -3 axe
+Risipit -2 axe
+Scurt -1 axe
+Pustiit -4 axe
+Lat 1 axe
+Nemărginit 5 axe
+Întunecat -4 axe
+Strâns -1 axe
+Tare 2 axe
+Ursit -1 axe
+Adunat 0 axe
+Înțeles 0 axe
+Liber 3 axe
+Ros -3
+Dumnezeiesc +5
+Bucuros +4
+Poruncitor +2
+Mănos +4
+Trainic +4
+Ascuțit -1
+Fidel +3
+Voit +1
+Lungit -1
+Jos e adverb
+Trebuincios +2
+Scump +4
+Privat 0
+Interior 0
+Mult +1
+Milostiv +3
+Mâhnit -3
+Repezit -2
+Nepotrivit -2
+Lipit 0
+Nenorocit -5
+Sărac -3
+Ridicat +2
+Leșinat -3
+Apărător +3
+Biruitor +4
+Comun 0
+Sărat -1
+Prost -3
+Bețiv -4
+Econom +3
+Smintit -4
+Dobrogean 0
+Plat 0
+Luminat +3
+Bătrân +2
+Hotărât +2
+Unic +4
+Tânăr +3
+Cunoscător +3
+Fericit +5
+Îmbrăcat +1
+Muncit -3
+Oltean 0
+Puternic +3
+Valah 0
+Obez -3
+Netrebnic -5
+Ostășesc +2
+Însoțit 0
+Nimicit -5
+Bătut -4
+Pârât -3
+Așezat +2
+Neștiut +1
+Închipuit 0
+Râvnitor +2
+Liniștit +2
+Crunt -4
+Pizmaș -4
+Drept +4
+Retezat -2
+Geografic 0
+Nemișcat +1
+Părăsit -3
+Neîncetat +1
+Temător -2
+Întinat -3
+Așteptat +1
+Robit -4
+Pierdut -3
+Chinuit -4
+Spart -2
+Răsărit +1
+Calic -2
+Înflorit +3
+Crăpat -2
+Bărbătesc +2
+Mincinos -3
+Singuratic -2
+Prim 0
+Gol -2
+Legat -1
+Valid +2
+Adânc +2
+Renumit +4
+Stătut -3
+Omenesc +2
+Sever -1
+Frumos +3
+Unit +2
+Destul +1
+Flămând -2
+Păros -2
+Îndesat -1
+Vârtos +2
+Rămas 0
+Logodit +1
+Neschimbător +2
+Nedrept -3
+Privitor 0
+Lămurit +2
+Desfrânat -4
+Domnitor 0
+Înfricoșat -3
+Nou +1
+Iubit +3
+Aspru -2
+Cronic -2
+Încărcat +1
+Minunat +3
+Învingător +4
+Topit -2
+Sigur +2
+Istoric 0
+Bârfitor -3
+Subțire +1
+Folositor +2
+Priceput +2
+Răposat -1
+Drag +2
+Înalt +2
+Păcătos -4
+Aurit +5
+Bun +2
+Alfabetic 0
+Lucrător +1
+Trimis 0
+Lacom -3
+Neadevărat -3
+Surd -2
+Mare +2
+Neînduplecat -2
+Mândru +2
+Purtat 0
+Format 0
+Rotund 0
+Galben 0
+Nătâng -3
+Binecuvântat +5
+Îndelung +1
+Potolit +2
+Ostenit -2
+Gândit +2
+Cald +1
+Aprins +2
+Mântuitor +4
+Nemernic -4
+Stăpânit -1
+Știut +1
+Proaspăt +2
+Încins -2
+Zburător +1
+Egal 0
+Lin +2
+Șters -2
+Vrăjmaș -3
+Ceresc +3
+Văduv -2
+Făcător 0
+Voinic +3
+Neastâmpărat -2
+Băutor -3
+Îndoit -2
+Rușinat -2
+Însărcinat 0
+Fățarnic -3
+Încurcat -2
+Excelent +5
+Ostil -3
+Nesocotit -3
+Supt -3
+Nesățios -3
+Mișcător +2
+Răsunător +3
+Credincios +4
+Înspăimântat -4
+Aruncat -2
+Roditor +3
+Norocos +4
+Împărțit 0
+Artificial -2
+Superior +4
+Necunoscut -2
+Ferm +3
+Iubitor +4
+Iscoditor -1
+Vinovat -4
+Beat -4
+Frânt -4
+Dârz +4
+Călduros +2
+Ticălos -5
+Voios +3
+Temeinic +3
+Deplin +4
+Cioplit 0
+Situat 0
+Negru 0
+Sprinten +3
+Greșit -3
+Mânios -3
+Tipic 0
+Ager +3
+Get 0
+Stins -3
+Acoperit +2
+Firesc +1
+Necurat -3
+Făcut 0
+Nesupus -1
+Următor 0
+Necinstit -3
+Ocupat +1
+Împodobit +3
+Învecinat 0
+Ultim 0
+Vlah 0
+Inferior -3
+Vecin 0
+Pustiu -4
+Împărătesc +4
+Îngust -1
+Început 0
+Oblic 0
+Scris 0
+Blând +3
+Propriu 0
+Blagoslovit +5
+Vechi +2
+Stăpânitor +2
+Scăpat +1
+Folosit -1
+Amăgitor -2
+Scăpătat -3
+Întreg +1
+Rău -3
+Oprit -2
+Sec -3
+Vesel +3
+Puțin -2
+Încet -1
+Mirositor +1
+Demn +3
+Mlăștinos -3
+Analog 0
+Deșert -4
+Ascultător +4
+Potrivit +2
+Îmbătrânit -2
+Fugit -2
+Ușor +2
+Descoperit -1
+Pătrunzător +2
+Stâng 0
+Slăbit -2
+Spălat +1
+Uscat -1
+Aducător +1
+Înșelat -3
+Cert +2
+Trupesc 0
+Nevătămat +3
+Posomorât -3
+Eretic -4
+Adevărat +4
+Lovit -3
+Netăiat +2
+Grabnic +2
+Larg +1
+Dus 0
+Citit +1
+Îndrăzneț +3
+Năvălitor -4
+Plecat 0
+Strașnic +4
+Exilat -3
+Politic 0
+Deschis +2
+Rece -2
+Îndelungat 0
+Mort -3
+Ajuns +1
+Vătămător -3
+Apropiat +2
+Lățit +1
+Curat +3
+Bogat +3
+Nobil +4
+Pârjolit -4
+Dezbrăcat -2
+Supărat -3
+Nevrednic -3
+Lungăreț -1
+Prins -1
+Cercetător +1
+Nestatornic -2
+Fraged +2
+Târziu -2
+Ieșit 0
+Obosit -2
+Slab -2
+Profund +3
+Ciudat -1
+Rănit -3
+Supus -2
+Vorbit 0
+Scăzut -1
+Adus 0
+Trândav -3
+Simplu +2
+Secat -3
+Falnic +4
+Șchiop -2
+Viclean -3
+Deștept +4
+Otrăvit -4
+Răspândit +1
+Străin -2
+Înecat -3
+Prelungit -1
+Decis +3
+Întărit +3
+Răsuflat -2
+Fierbinte +2
+Lipsit -2
+Sălbatic -4
+Întins +3
+Adormit -1
+Lung +1
+Păgân -4
+Meșter +3
+Dator -2
+Pecetluit +2
+Lipicios -2
+Determinat 0
+Senin +3
+Pripit -2
+Friguros -2
+Ocolit 0
+Depărtat -1
+Vestit +3
+Tulburat -3
+Groaznic -5
+Plăcut +3
+Rupt -2
+Avut +3
+Mărunt -3
+Natural +1
+Repede +2
+Încruntat -2
+Întunecos -3
+Nemăsurat +3
+Cunoscut +2
+Fricos -2
+Mut -2
+Urât -3
+Știutor +3
+Sfințit +4
+Creț +1
+Amar -3
+Cumplit -5
+Fost 0
+Nesilit +2
+Neatins +2
+Necontenit +2
+Defăimat -3
+Înaintat +2
+Ars -3
+Îngeresc +4
+Director +3
+Viu +2
+Zugrăvit 0
+Nebun -3
+Crud -4
+Mărginit -2
+Sănătos +4
+Isteț +3
+Desăvârșit +5
+Tăinuit -1
+Roșu 0
+Împlinit +4
+Rugător +1
+Des +1
+Obișnuit 0
+Nevinovat +3
+Pătruns +2
+Gingaș +3
+Grozav +4
+Risipitor -3
+Prefăcut -4
+Strălucitor +4
+Intim +1
+Tăiat -2
+Sătul -2
+Gâlcevitor -3
+Orb -2
+Mic -2
+Amestecat -1
+Cinstit +3
+Biet -3
+Susținut +2
+Rușinos -3
+Salin 0
+Militar 0
+Înfundat -2
+Îngreuiat -2
+Nedespărțit +2
+Deosebit +2
+Temut -2
+Prădat -3
+Ucigaș -5
+Smuls -3
+Vestitor +2
+Încredințat +2
+Trufaș -2
+Încleștat -2
+Celebru +4
+Apucat -2
+Alăturat 0
+Păstoresc 0
+Abătut -2
+Neînsemnat -3
+Înscris 0
+Fin +3
+Închis -2
+Veșnic +4
+Ascuns -1
+Numeros +2
+Aiurea -2
+Trist -3
+Trudit -3
+Domestic +1
+Jurat 0
+Fertil +3
+Latin 0
+Lăcuit 0
+Clar +2
+Căutat 0
+Cruciș 0
+
+
