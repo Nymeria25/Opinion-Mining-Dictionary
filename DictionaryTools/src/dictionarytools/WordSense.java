@@ -22,6 +22,10 @@ public class WordSense {
         return lemma_;
     }
     
+    public void setLemma(String lemma) {
+        lemma_ = lemma;
+    }
+    
     public Set<SentimentAxe> getAxes() {
         return axes_;
     }
@@ -30,6 +34,15 @@ public class WordSense {
         this.axes_.add(axe);
     }
     
-    private final String lemma_;
+    public double getScore() {
+        return score_;
+    }
+    
+    public void setScore(Double score) {
+        score_ = score;
+    }
+    
+    private String lemma_;
     Set<SentimentAxe> axes_;
+    private double score_;
 }
