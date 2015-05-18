@@ -15,9 +15,11 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import org.languagetool.AnalyzedToken;
 import org.languagetool.AnalyzedTokenReadings;
@@ -41,12 +43,13 @@ public class Dictionary {
      * @throws FileNotFoundException
      */
     public Dictionary(Corpus corpus, String adjectivesFile, String adverbsFile,
-            String verbsFile, String properNounsFile, String unrecognizedWordsFile)
+            String verbsFile, String properNounsFile, String unrecognizedWordsFile,
+            String normalizationFile)
             throws FileNotFoundException, Exception {
 
         corpus_ = corpus;
         InitializeBufferedWriters(adjectivesFile, adverbsFile, verbsFile,
-                properNounsFile, unrecognizedWordsFile);
+                properNounsFile, unrecognizedWordsFile, normalizationFile);
         AllocateMembers();
         InitializeMetricsValues(); 
     }
@@ -149,6 +152,9 @@ public class Dictionary {
             normalizedWord = IiGroupToIInWord(normalizedWord);
             
             normalizedWords.add(normalizedWord);
+            if(!word.equals(normalizedWord)) {
+                normalizations_.put(word, normalizedWord);
+            }
             iterator.remove();
         }
         
@@ -170,6 +176,7 @@ public class Dictionary {
         System.out.println("No of unrecognized words = " + unrecognizedWords_.size());
         System.out.println("No of words without WordNet domain information = " + 
                 noWordsWithNoWordnetDomain_);
+        System.out.println("No of normalizations = " + normalizations_.size());
         System.out.println("Total no of words (singular occurence) = " + totalNoWords_);
 
         // Write the Set of adjectives to the adjectives file.
@@ -205,11 +212,19 @@ public class Dictionary {
             writerForUnrecognizedWords_.write((String) iterator.next());
             writerForUnrecognizedWords_.write(newLine);
         }
+        
+        iterator = normalizations_.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry pair = (Map.Entry)iterator.next();
+            writerForNormalization_.write((String) pair.getKey() + " " + (String) pair.getValue());
+            writerForNormalization_.write(newLine);
+        }
 
         writerForAdjectives_.close();
         writerForAdverbs_.close();
         writerForVerbs_.close();
         writerForUnrecognizedWords_.close();
+        writerForNormalization_.close();
     }
     
      private void InitializeMetricsValues() {
@@ -241,10 +256,12 @@ public class Dictionary {
         unrecognizedWords_ = new HashSet();
         properNouns_ = new HashSet();
         nouns_ = new HashSet();
+        normalizations_ = new HashMap();
     }
     
     private void InitializeBufferedWriters(String adjectivesFile, String adverbsFile,
-            String verbsFile, String properNounsFile, String unrecognizedWordsFile) 
+            String verbsFile, String properNounsFile, String unrecognizedWordsFile,
+            String normalizationFile) 
             throws FileNotFoundException {
         OutputStream stream = new FileOutputStream(adjectivesFile);
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(
@@ -270,6 +287,11 @@ public class Dictionary {
         outputStreamWriter = new OutputStreamWriter(
                 stream, Charset.forName("UTF-8"));
         writerForUnrecognizedWords_ = new BufferedWriter(outputStreamWriter);
+        
+        stream = new FileOutputStream(normalizationFile);
+        outputStreamWriter = new OutputStreamWriter(
+                stream, Charset.forName("UTF-8"));
+        writerForNormalization_ = new BufferedWriter(outputStreamWriter);
     }
 
     private String NormalizeIfHyphenatedWord(String word) {
@@ -443,11 +465,13 @@ public class Dictionary {
     private Set<String> unrecognizedWords_;
     private Set<String> properNouns_;
     private Set<String> nouns_;
+    private HashMap<String, String> normalizations_;
     private BufferedWriter writerForAdjectives_;
     private BufferedWriter writerForAdverbs_;
     private BufferedWriter writerForVerbs_;
     private BufferedWriter writerForProperNouns_;
     private BufferedWriter writerForUnrecognizedWords_;
+    private BufferedWriter writerForNormalization_;
     private RomanianTagger romanianTagger_;
     private RoWordNet roWordNet_;
     private final Corpus corpus_;

@@ -1,5 +1,5 @@
 /*
- * This is the main function of the Dictionary,
+ * Here is the main function of the Dictionary,
  * that will create and test a dictionary with scores,
  * based on the pre-processing of the 3 documents.
  */
@@ -45,7 +45,7 @@ public class BuildDictionary {
             Corpus corp = new Corpus("cantemir.txt", "ureche.txt", "costin.txt");
             Dictionary dictionary = new Dictionary(corp, "adjectives_list.txt",
                     "adverbs_list.txt", "verbs_list.txt", "proper_nouns_list.txt",
-                    "unrecognized_words_list.txt");
+                    "unrecognized_words_list.txt", "normalization.txt");
             dictionary.CreateDictionary();
             dictionary.writeDictionaryToFiles();
 
