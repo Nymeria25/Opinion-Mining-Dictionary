@@ -29,9 +29,10 @@ public class BuildOpinionTool {
     
     public static void main(String[] args) throws IOException {
         
-        OpinionTool opinionTool = new OpinionTool();
+        OpinionTool opinionTool = new OpinionTool("normalization.txt");
         Set<String> keys = PopulateKeys();
-        opinionTool.ExtractOpinionsWithKeywords((HashSet<String>) keys);
+        opinionTool.ExtractSentencesWithKeywords((HashSet<String>) keys);
+        opinionTool.NormalizeSentences();
         opinionTool.WriteToFiles();
     }
 }
