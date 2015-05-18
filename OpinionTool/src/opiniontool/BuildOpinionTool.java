@@ -33,6 +33,7 @@ public class BuildOpinionTool {
         Set<String> keys = PopulateKeys();
         opinionTool.ExtractSentencesWithKeywords((HashSet<String>) keys);
         opinionTool.NormalizeSentences();
+        opinionTool.DetermineEntitiesInOpinions();
         opinionTool.WriteToFiles();
     }
 }

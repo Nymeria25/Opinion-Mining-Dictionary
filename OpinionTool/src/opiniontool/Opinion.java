@@ -37,6 +37,14 @@ public class Opinion {
         return sentence_;
     }
     
+    public void setEntities(Set<String> entities) {
+        entities_ = entities;
+    }
+    
+    public Set<String> getEntities() {
+        return entities_;
+    }
+    
     private String normalizedSentence_;
     private String sentence_;
     private Set<String> affects_;
