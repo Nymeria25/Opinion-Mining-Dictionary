@@ -1,0 +1,42 @@
+Deci, unde ieste și cât vac ieste de când au venit Traian pre aicea și când s-au bătut Laslo, craiul unguresc, cu tătarii?
+Normalized Sentence [ deci  undă  și cât   de când au venit  pre aicea și când s au bătut   crai unguresc  cu tătar .]
+Entities [Traian, Laslo]
+Sentiment Segments [( null, null, bătut) ]
+WeightS = -4.0
+
+
+Și pentru aceea boerii ca să numai pătimească și altă dată vreo întâm­plare ca aceea, ș'au lăsat la Turci toată volnicia alegerii, însă cu acest chip: ca să fie din neam domnesc și supus credinței pravoslavnice; și așa dupre așezământul acesta, au trimis turcii domn, tăind pe Barnovschi, pe:
+Normalized Sentence [ și pentru acel ca să numai pătimi și altă da vreo întâmplare ca acel  ș au lăsat la turci toată volnicie alegere  însă cu acest chip  ca să fi din neam domnesc și supus credință pravoslavnic  și așa dupre așezământ acest  au trimis turci domn  tăia pe   pe .]
+Entities [Barnovschi, Turci]
+Sentiment Segments [( null, null, supus) , ( null, null, fi) , ( null, null, tăia) , ( null, null, trimis) , ( null, null, pătimi) , ( null, null, da) ]
+WeightS = -1.1666666666666667
+
+
+Războiul de la Soci, cându s-au bătut Ștefan vodă cu Radul vodă domnul muntenescu, 6979 (1471) martie 7 dni
+Normalized Sentence [ război de la soc  când s au bătut  vodă cu rad vodă domn muntenesc              martie    .]
+Entities [Soci, Radul, Ștefan, Vasluiului]
+Sentiment Segments [( null, null, bătut) ]
+WeightS = -4.0
+
+
+Locul dară acesta, unde ieste acum Moldova și Țara Muntenească ieste dreptŭ Dachia cum și tot Ardealul cu Maramoroșul și cu Țara Oltului.
+Normalized Sentence [ locul dară acest  undă  acum moldova și țară muntenesc  drept  cum și tot  cu  și cu țară  .]
+Entities [Moldova, Dachia, Țara Muntenească, Maramoroșul, Italiia, Ardealul]
+Sentiment Segments [( null, null, drept) ]
+WeightS = 4.0
+
+
+Și când merge el la curtea Vizirului, descalecă la scară și i se dă titlul Domnesc de către Chiaia și de la alții și i se dă cafea și altele dupre obiceiul turcesc, dân­du-i toată cinstea care obișnuesc Turcii a o da Domnilor celor stăpânitori și mai înainte avea, atât Beizadelele Domnilor, cât și Domnii cei maziliți, dela vistieria împărătească o leafă ho­tărîtă pre toată ziua, dela cinci până la zece taleri împărătești.
+Normalized Sentence [ și când merge el la curte    la scară și i se da titlu domnesc de către  și de la alții și i se da cafea și alta dupre obicei turcesc  da i toată cinste car  turci a o da domn celui stăpânitor și mai înainte avea  atât beizadea domn  cât și domnie cel mazili   vistierie împărătesc o leafă pre toată zi   cinci până la zece taler împărătesc .]
+Entities [Turcii, Beizadelele Domnilor, Vizirului, Domnii, Chiaia, Domnilor, Domnesc]
+Sentiment Segments [( null, null, stăpânitor) , ( null, null, avea) , ( null, null, da) , ( null, null, împărătesc) , ( null, null, împărătesc) , ( null, null, merge) , ( null, null, da) , ( null, null, da) , ( null, null, da) ]
+WeightS = 1.7777777777777777
+
+
+Când au sfințit Ștefan vodă mănăstirea Putna
+Normalized Sentence [ când au sfințit  vodă mănăstire  .]
+Entities [Ștefan, Suceava]
+Sentiment Segments [( null, null, sfințit) ]
+WeightS = 4.0
+
+

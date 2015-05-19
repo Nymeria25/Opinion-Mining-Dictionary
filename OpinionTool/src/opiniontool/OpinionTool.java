@@ -82,7 +82,7 @@ public class OpinionTool {
     }
 
     private void InitializeBufferedWriters(String file1, String file2,
-            String file3) throws FileNotFoundException {
+            String file3, String fileForMetrics) throws FileNotFoundException {
         OutputStream stream = new FileOutputStream(file1);
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(
                 stream, Charset.forName("UTF-8"));
@@ -97,6 +97,11 @@ public class OpinionTool {
         outputStreamWriter = new OutputStreamWriter(
                 stream, Charset.forName("UTF-8"));
         writerForFile3_ = new BufferedWriter(outputStreamWriter);
+        
+        stream = new FileOutputStream(fileForMetrics);
+        outputStreamWriter = new OutputStreamWriter(
+                stream, Charset.forName("UTF-8"));
+        writerForMetrics_ = new BufferedWriter(outputStreamWriter);
     }
 
     public boolean HasKeyword(String line, HashSet<String> keywords) {
@@ -148,7 +153,7 @@ public class OpinionTool {
     public void ExtractSentencesWithKeywords(HashSet<String> keywords)
             throws FileNotFoundException, IOException {
         InitializeBufferedWriters("sentence_costin.txt", "sentence_cantemir.txt",
-                "sentence_ureche.txt");
+                "sentence_ureche.txt", "metrics.txt");
         ReadFiles("costin.txt", "cantemir.txt", "ureche.txt", keywords);
     }
 
@@ -169,28 +174,107 @@ public class OpinionTool {
         ComputeSentimentSegmentsInOpinionsImplementation(opinions2_,2);
         ComputeSentimentSegmentsInOpinionsImplementation(opinions3_,3);
     }
+    
+    public void ComputeWeightSForOpinions() {
+        ComputeWeightSForOpinionsImplementation(opinions1_,1);
+        ComputeWeightSForOpinionsImplementation(opinions2_,2);
+        ComputeWeightSForOpinionsImplementation(opinions3_,3);
+    }
+    
+    private void WriteImplementation(BufferedWriter writer, ArrayList<Opinion>
+            opinions) throws IOException {
+        String newLine = "\n";        
+        for (Opinion opinion : opinions) {
+            writer.write(opinion.getSentence());
+            writer.write(newLine + "Normalized Sentence [ ");
+            writer.write(opinion.getNormalizedSentence());
+            writer.write("]");
+            writer.write(newLine + "Entities ");
+            writer.write(opinion.getEntities().toString());
+            writer.write(newLine + "Sentiment Segments ");
+            writer.write(opinion.getSegments().toString());
+            writer.write(newLine + "WeightS = ");
+            writer.write(String.valueOf(opinion.getWeightS()));
+            writer.write(newLine + newLine + newLine);
+        }
+    }
+    
+    public Opinion ComputeMinimum(ArrayList<Opinion> opinions) {
+        double min = 500.0;
+        Opinion resultedOpinion = null;
+        for(Opinion opinion : opinions) {
+            if(opinion.getWeightS() < min) {
+                min = opinion.getWeightS();
+                resultedOpinion = opinion;
+            }
+        }
+        return resultedOpinion;
+    }
+    
+    public Opinion ComputeMaximum(ArrayList<Opinion> opinions) {
+        double max = -500.0;
+        Opinion resultedOpinion = null;
+        for(Opinion opinion : opinions) {
+            if(opinion.getWeightS() > max) {
+                max = opinion.getWeightS();
+                resultedOpinion = opinion;
+            }
+        }
+        return resultedOpinion;
+    }
+    
+    public void WriteMetrics() throws IOException {
+        ArrayList<Opinion> opinions = new ArrayList();
+        opinions.add(ComputeMinimum(opinions1_));
+        opinions.add(ComputeMinimum(opinions2_));
+        opinions.add(ComputeMinimum(opinions3_));
+        
+        opinions.add(ComputeMaximum(opinions1_));
+        opinions.add(ComputeMaximum(opinions2_));
+        opinions.add(ComputeMaximum(opinions3_));
+        
+        WriteImplementation(writerForMetrics_, opinions);
+        writerForMetrics_.close();
+        
+    }
 
     public void WriteToFiles() throws IOException {
         System.out.println("No of sentences 1 = " + opinions1_.size());
         System.out.println("No of sentences 2 = " + opinions2_.size());
         System.out.println("No of sentences 3 = " + opinions3_.size());
+        
+        WriteImplementation(writerForFile1_, opinions1_);
+        WriteImplementation(writerForFile2_, opinions2_);
+        WriteImplementation(writerForFile3_, opinions3_);
 
-        String newLine = "\n";
+        writerForFile1_.close();
+        writerForFile2_.close();
+        writerForFile3_.close();
 
-        for (Opinion opinion : opinions1_) {
-            writerForFile1_.write(opinion.getSentence());
-            writerForFile1_.write(newLine + "Normalized Sentence [ ");
-            writerForFile1_.write(opinion.getNormalizedSentence());
-            writerForFile1_.write("]");
-            writerForFile1_.write(newLine + "Entities ");
-            writerForFile1_.write(opinion.getEntities().toString());
-            writerForFile1_.write(newLine + "Sentiment Segments ");
-            writerForFile1_.write(opinion.getSegments().toString());
-            writerForFile1_.write(newLine + newLine + newLine);
+    }
+    
+    public void ComputeWeightSForOpinionsImplementation(ArrayList<Opinion> 
+            opinions, int index) {
+        
+        Iterator<Opinion> iterator = opinions.iterator();
+        ArrayList<Opinion> computedOpinions = new ArrayList();
+        Opinion opinion;
+        
+        while(iterator.hasNext()) {
+            opinion = iterator.next();
+            opinion.computeWeightS();
+            computedOpinions.add(opinion);
+            iterator.remove();
         }
         
-        writerForFile1_.close();
-
+        if(index == 1) {
+            opinions1_.addAll(computedOpinions);
+        } else if(index == 2) {
+            opinions2_.addAll(computedOpinions);
+        } else {
+            opinions3_.addAll(computedOpinions);
+        }
+        
     }
 
     public Set<SentimentSegment> ComputeSentimentSegmentFromOpinion(Opinion opinion) {
@@ -199,28 +283,30 @@ public class OpinionTool {
         String normalizedSentence = opinion.getNormalizedSentence();
         String words[] = normalizedSentence.split("[\\s.,!:;”„\"()-?']");
         SentimentSegment segment;
+        double wordScore;
 
         for (int iter = 0; iter < words.length; iter++) {
             if (lexicon_.containsKey(words[iter])) {
                 // Check for negation and modifiers
+                wordScore = lexicon_.get(words[iter]);
                 if (iter >= 3 && words[iter - 1].equals("mai") && (words[iter - 2].
                         equals("cel") || (words[iter - 2].equals("cea")))
                         && words[iter - 3].equals("nu")) {
-                    segment = new SentimentSegment("nu", "cel mai", words[iter]);
+                    segment = new SentimentSegment("nu", "cel mai", words[iter], wordScore);
                 } else if (iter >= 2 && words[iter - 1].equals("mai") && (words[iter - 2].
                         equals("cel") || (words[iter - 2].equals("cea")))) {
-                    segment = new SentimentSegment(null, "cel mai", words[iter]);
+                    segment = new SentimentSegment(null, "cel mai", words[iter], wordScore);
                 } else if (iter >= 2 && words[iter - 1].equals("mai")
                         && words[iter - 2].equals("nu")) {
-                    segment = new SentimentSegment("nu", "mai", words[iter]);
+                    segment = new SentimentSegment("nu", "mai", words[iter], wordScore);
                 } else if (iter >= 1 && words[iter - 1].equals("mai")) {
-                    segment = new SentimentSegment(null, "mai", words[iter]);
+                    segment = new SentimentSegment(null, "mai", words[iter], wordScore);
                 } else if (iter >= 2 && words[iter - 2].equals("nu")) {
-                    segment = new SentimentSegment("nu", null, words[iter]);
+                    segment = new SentimentSegment("nu", null, words[iter], wordScore);
                 } else if (iter >= 3 && words[iter - 3].equals("nu")) {
-                    segment = new SentimentSegment("nu", null, words[iter]);
+                    segment = new SentimentSegment("nu", null, words[iter], wordScore);
                 } else {
-                    segment = new SentimentSegment(null, null, words[iter]);
+                    segment = new SentimentSegment(null, null, words[iter], wordScore);
                 }
                 
              segmentSet.add(segment);
@@ -381,6 +467,7 @@ public class OpinionTool {
     private BufferedWriter writerForFile1_;
     private BufferedWriter writerForFile2_;
     private BufferedWriter writerForFile3_;
+    private BufferedWriter writerForMetrics_;
     private BufferedReader corpusBufferedReader_;
     private final StringBuilder stringBuilder_;
     private ArrayList<String> sentences1_;

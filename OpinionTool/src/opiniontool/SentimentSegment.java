@@ -11,14 +11,20 @@ package opiniontool;
  */
 public class SentimentSegment {
     
-    public SentimentSegment(String negation, String modifier, String trigger) {
+    public SentimentSegment(String negation, String modifier, String trigger, 
+            double triggerValue) {
         negation_ = negation;
         modifier_ = modifier;
         trigger_ = trigger;
+        triggerValue_ = triggerValue;
     }
     
     public String getNegation() {
         return negation_;
+    }
+    
+    public double getTriggerValue() {
+        return triggerValue_;
     }
     
     public String getModifier() {
@@ -35,4 +41,5 @@ public class SentimentSegment {
     }
     
    private String negation_, modifier_, trigger_;
+   private double triggerValue_;
 }

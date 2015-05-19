@@ -57,6 +57,42 @@ public class Opinion {
         sentimentSegments_.addAll(sent);
     }
     
+    public void computeWeightS() {
+        int numberOfSegments = sentimentSegments_.size();
+        double score;
+        for(SentimentSegment sent : sentimentSegments_) {
+            if(sent.getNegation()!= null && sent.getModifier()!=null && 
+                    sent.getModifier().equals("cel mai")) {
+                score = 13/10 * sent.getTriggerValue();
+            } else if(sent.getNegation()== null && sent.getModifier()!=null && 
+                    sent.getModifier().equals("cel mai")) {
+                score = 18/10 * sent.getTriggerValue();
+            } else if(sent.getNegation()!= null && sent.getModifier()!=null && 
+                    sent.getModifier().equals("mai")) {
+                score = sent.getTriggerValue();
+            } else if(sent.getNegation()== null && sent.getModifier()!=null && 
+                    sent.getModifier().equals("mai")) {
+                score = 14/10 * sent.getTriggerValue();
+            } else if(sent.getNegation()!= null && sent.getModifier()== null) {
+                score = 2/10 * sent.getTriggerValue();
+            } else {
+                score = sent.getTriggerValue();
+            }
+        
+        weightS_ += score;
+        }
+        if(numberOfSegments > 0) {
+            weightS_ /= numberOfSegments;
+        } else {
+            weightS_ = 0;
+        }
+        
+    }
+    
+    public double getWeightS() {
+        return weightS_;
+    }
+    
     private String normalizedSentence_;
     private String sentence_;
     private Set<String> affects_;

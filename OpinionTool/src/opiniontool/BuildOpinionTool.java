@@ -23,6 +23,9 @@ public class BuildOpinionTool {
         keys.add("otoman");
         keys.add("turc");
         keys.add("Ștefan vodă");
+        keys.add("Traian");
+        keys.add("Decheval");
+        keys.add("Dachia");
         keys.add("dachi");
         return keys;    
 }
@@ -35,6 +38,8 @@ public class BuildOpinionTool {
         opinionTool.NormalizeSentences();
         opinionTool.DetermineEntitiesInOpinions();
         opinionTool.ComputeSentimentSegmentsInOpinions();
+        opinionTool.ComputeWeightSForOpinions();
         opinionTool.WriteToFiles();
+        opinionTool.WriteMetrics();
     }
 }

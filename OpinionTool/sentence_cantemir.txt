@@ -1,0 +1,287 @@
+Scrisoarea aceasta o duce Talhișciul la Îm­păratul după obiceiul turcesc și după ce scrie Împăratul dedesupt cuvintele aceste obișnuite: „Amel oluna”; adecă: „să fie precum scrie”, apoi o trimite tot cu acel Talhișciu, iarăși înapoi la Vizinul.
+Normalized Sentence [ scrisoare acest o duce  la împărat după obicei turcesc și după ce scrie împărat  cuvânt acest obișnuit       adecă   să fi precum scrie   apoi o trimite tot cu acel   iarăși înapoi la  .]
+Entities [Îm­păratul, Amel, Împăratul, Talhișciul, Talhișciu]
+Sentiment Segments [( null, null, trimite) , ( null, null, obișnuit) , ( null, null, fi) ]
+WeightS = 0.0
+
+
+Iar mai înainte, până a nu fi Basarabia ocupată de oștire turcească și tătărască, coprinderea Moldovei era de 247 ore și 822 mil.
+Normalized Sentence [ iar mai înainte  până a nu fi  ocupa de oștire turcesc și tătărî  coprindere moldova eră de     oră și      .]
+Entities [Moldovei, Basarabia]
+Sentiment Segments [( nu, null, ocupa) , ( null, null, fi) ]
+WeightS = 0.0
+
+
+Căci subt Bogdan un fiu al său, de odată s'a stins raza cea de frunte a slavei Mol­dovenești, voia de a mai face răsboi și a lega pace, jurând el împăratului turcesc jurământul credinței, făgăduindu-i să plătească pe tot anul patru mii de galbeni semn de închinăciune.
+Normalized Sentence [ căci subt  un fiu al său  de odată s a stins rază cel de frunte a slav moldovenesc  voi de a mai face  și a lega pace  jura el împărat turcesc jurământ credință  făgădui i să plăti pe tot an patru mii de galben semn de închinăciune .]
+Entities [Bogdan, Mol­dovenești]
+Sentiment Segments [( null, null, plăti) , ( null, null, făgădui) , ( null, null, stins) , ( null, null, voi) , ( null, null, jura) , ( null, mai, face) , ( null, null, galben) , ( null, null, lega) ]
+WeightS = 0.0
+
+
+Pentru aceea Beiliccii dau la Tarigrad pre tot anul oi de acestea, ce se numesc în limba turcească, Chivirdoc, mai mult de șasezeci mii, pentru cuhnea Sultanului; pentru că carnea lor se socotește de Turci mai mult decât toată altă carne, atât pentru gustul ei cel bun, cât și pentru ușurința mistuitului.
+Normalized Sentence [ pentru acel da la  pre tot an oaie de acest  ce se numi în limbă turcesc    mai mult de șasezeci mii  pentru cuhne sultan  pentru că carne lor se socoti de turci mai mult decât toată altă carne  atât pentru gust ea cel bun  cât și pentru ușurință  .]
+Entities [Tarigrad, Chivirdoc, Donului, Sultanului, Turci, Beiliccii]
+Sentiment Segments [( null, null, da) , ( null, mai, mult) , ( null, mai, mult) , ( null, null, bun) , ( null, null, numi) ]
+WeightS = 1.0
+
+
+Dar partea cea mai de frunte sunt mărturiile celor mai buni istorici romani din cari se vede că, împăratul Traian a adus în Dacia mari colonii romane și următorul său Adrian, cedând barbarilor mai multe provincii orientale, a fost oprit de-a părăsi Dacia numai de frică să nu fie nimicite de barbari acele colonii.
+Normalized Sentence [ dar parte cel mai de frunte fi mărturie celui mai bun istoric roman din car se vede că  împărat  a adus în  mare colonie roman și următor său   ceda barbar mai mult provincie oriental  a fost oprit de a părăsi  numai de frică să nu fi nimicit de barbar ac colonie .]
+Entities [Adrian, Traian, Dacia]
+Sentiment Segments [( null, null, fi) , ( null, null, ceda) , ( null, null, oprit) , ( null, null, istoric) , ( null, null, fi) , ( null, null, barbar) , ( null, null, mare) , ( null, null, fost) , ( null, null, barbar) , ( null, null, părăsi) , ( null, mai, bun) , ( null, null, următor) , ( null, null, adus) , ( null, mai, mult) , ( nu, null, nimicit) ]
+WeightS = -0.4666666666666667
+
+
+Iar el iea sângeacul în mână și îl sărută cu cinste, și îl dă Sângectarului său sau Stega­rului său, să poarte grijă pentru dânsul și apoi poftește la sineși pe Miralem-Aga în sala cea mare sau divan și dându-i dulceți, cafea și alte după obiceiul turcesc, îl îmbracă cu o blană de samur și-i dă bacșișul cel obișnuit.
+Normalized Sentence [ iar el  sângeac în mână și îl săruta cu cinste  și îl da  său sau stegar său  să purta grijă pentru dânsul și apoi pofti la sineși pe  agă în sală cel mare sau divan și da i dulceață  cafea și alta după obicei turcesc  îl îmbrăca cu o blană de samur și i da bacșiș cel obișnui .]
+Entities [Sângectarului, Stega­rului, Miralem Aga]
+Sentiment Segments [( null, null, săruta) , ( null, null, mare) , ( null, null, îmbrăca) , ( null, null, da) , ( null, null, da) , ( null, null, purta) , ( null, null, obișnui) , ( null, null, pofti) , ( null, null, da) ]
+WeightS = 1.0
+
+
+Iară chipul cu care s'a sădit înainte și s'a ținut în Dacia vița Romană așa multe sute de ani, de la Traian, până în vremile noastre; nu ne este voea ca să-l descoperim așa pre larg25 ci numai singur adevărul acesta îl punem îm­potriva celor ce sunt cu îndoeală, adecă: limba Moldovenească care mai mult decât toate alte limbi se asemenează cu limba Romană, ne în­dreptează la spița neamului nostru destul de luminat, încât nimenea nu poate să mai stea împotrivă cu nimic.
+Normalized Sentence [ iară chip cu car s a sădit înainte și s a ținut în  viță roman așa mult sute de an  de la   până în  noastre  nu ne fi  ca să l descoperi așa pre larg   ci numai singur adevăr acest îl pune împotriva celui ce fi cu   adecă  limbă moldovenesc car mai mult decât toate alta limbă se  cu limbă roman  ne îndrepta la spiță neam nostru destul de luminat  încât nimenea nu putea să mai stea împotrivă cu nimic .]
+Entities [Traian, Dacia, Romană, Moldovenească]
+Sentiment Segments [( null, null, singur) , ( nu, null, fi) , ( null, mai, mult) , ( null, null, mult) , ( null, null, fi) , ( null, null, destul) , ( null, null, descoperi) , ( null, null, luminat) , ( null, null, larg) , ( null, null, îndrepta) ]
+WeightS = 1.1
+
+
+Divanul acesta, care cu cuvânt turcesc se înțelege sala cea de judecată, este tot­deauna în mijlocul palatului Domnesc.
+Normalized Sentence [ divan acest  car cu cuvânt turcesc se înțelege sală cel de judeca  fi totdeauna în mijloc palat domnesc .]
+Entities [Țari­gradești]
+Sentiment Segments [( null, null, judeca) , ( null, null, fi) ]
+WeightS = 0.5
+
+
+Călărașii de Țarigrad sunt 50, cu vatavul lor și toți vorbesc turcește și au datorie să meargă la Țarigrad când este trebuință și pentru aceea osebit că sunt slobozi de bir, mai au și dela Visteriea țării câte 20 de taleri.
+Normalized Sentence [ călăraș de  fi     cu  lor și toți vorbi turcește și au datorie să merge la  când fi trebuință și pentru acel osebit că fi slobozi de bir  mai au și   țară câte    de taler .]
+Entities [Țarigrad, Visteriea]
+Sentiment Segments [( null, null, merge) , ( null, null, fi) , ( null, null, slobozi) , ( null, null, fi) , ( null, null, vorbi) , ( null, null, fi) ]
+WeightS = 0.6666666666666666
+
+
+Ștefan al VII-lea, carele s'a arătat pe sine a fi strănepot lui Alexandru al II-lea și subt acest nume a ajuns cererea, sa și a boeri­lor Moldovei la Împăratul turcesc.
+Normalized Sentence [  al vii lea  car s a arăta pe sine a fi strănepot lui al ii lea și subt acest nume a ajuns cerere  sa și a moldova la împărat turcesc .]
+Entities [II, Împăratul, Moldovei, Alexandru, VII]
+Sentiment Segments [( null, null, arăta) , ( null, null, ajuns) , ( null, null, fi) ]
+WeightS = 0.3333333333333333
+
+
+Atuncea Vizirul îndată, dacă nu are altă treabă, poruncește lui Capi­gilar Chehai-agasi, sau celui mai dintâi dela perdea, ca să aducă în lăuntru pe domnul cel nou și aducându-l, așteaptă puțin în sala cea dinainte și nu intră în divan sau Orțagasi, până când nu sunt tocmiți în rând toți slujitorii Vizirului și oamenii lui cei dela camară pe de amândouă părțile în sală fiește carele după starea sa; și atuncea merge înlăuntru și sărută mâna Vizirului carele șade între perini după obiceiul turcesc și Chihaia stă de-a dreapta lui.
+Normalized Sentence [ atuncea  îndată  dac nu ara altă treabă  porunci lui    sau celui mai dintâi  perdea  ca să aduce în pe domn cel nou și aduce l  aștepta puțin în sală cel dinainte și nu intra în divan sau   până când nu fi tocmi în rând toți slujitor  și om lui cel   pe de amândouă parte în sală  car după stare sa  și atuncea merge înlăuntru și săruta mâna  car ședea între perină după obicei turcesc și chihaie sta de a dreaptă lui .]
+Entities [Chihaia, Orțagasi, Vizirului, Dragoșesc Vizirul, Capi­gilar Chehai]
+Sentiment Segments [( null, null, ara) , ( null, null, dac) , ( null, null, aduce) , ( null, null, porunci) , ( null, null, fi) , ( null, null, sta) , ( null, null, mâna) , ( null, null, ședea) , ( null, null, aștepta) , ( null, null, săruta) , ( null, null, merge) , ( null, null, aduce) , ( null, null, intra) , ( null, null, puțin) , ( null, null, nou) ]
+WeightS = 0.26666666666666666
+
+
+Însă aceasta este știut de fiește carele: că Moldova mai înainte până a nu cădea supt stă­pânirea turcească, avea așezământ de pace cu Leșii, după cum mărturisește însuși vlădica Pia­zițius, măcar că'i stă împotrivă Dlugoș, Sarni­țius și Oricovius.
+Normalized Sentence [ însă acest fi știut de  car  că moldova mai înainte până a nu cădea supt stăpânire turcesc  avea așezământ de pace cu leș  după cum mărturisi însuși vlădică  măcar că i sta împotrivă   și  .]
+Entities [Moldova, Pia­zițius, Leșii, DlugoșSarni­țius]
+Sentiment Segments [( null, null, cădea) , ( null, null, fi) , ( nu, null, supt) , ( null, null, avea) , ( null, null, sta) , ( null, null, mărturisi) , ( null, null, știut) ]
+WeightS = 0.42857142857142855
+
+
+Pentrucă după obiceiul turcesc schimbându-se Vizirii foarte des, apoi Vizirul cel nou ca să descopere înșelăciunea și vicleșugurile celuilalt, face îndată cercetare pentru cele ce a luat cu strâmbătate și preste suma hotărâtă, de la Domnul Moldovei și al Țării Românești.
+Normalized Sentence [  după obicei turcesc schimba se foarte des  apoi  cel nou ca să descoperi înșelăciune și vicleșug celuilalt  face îndată cercetare pentru cel ce a luat cu strâmbătate și  suma hotărî  de la domn moldova și al țară românesc .]
+Entities [Domnul Moldovei, Vizirul, Vizirii]
+Sentiment Segments [( null, null, schimba) , ( null, null, hotărî) , ( null, null, descoperi) , ( null, null, des) , ( null, null, nou) , ( null, null, face) ]
+WeightS = 0.8333333333333334
+
+
+Aceasta, după cum l'am văzut eu însumi, începe cu două șanțuri dela Petrovaradinu în Ungaria și de aci până la munții Demarcapu, adică până la Poarta de fer, se întinde apoi ca un simplu șanț prin toată România și Moldova, tăia prin Prut la satul lui Traian, prin Botna la târgul Causiani și trecând prin toată Tataria se termina la apa Donului.
+Normalized Sentence [ acest  după cum l avea văzut eu însumi  începe cu doi șanț  în ungaria și de aci până la munte  adică până la poartă de fer  se întinde apoi ca un simplu șanț prin toată românia și moldova  tăia prin  la sat lui   prin  la târg  și trece prin toată  se termina la apă  .]
+Entities [Moldova, Petrovaradinu, Prut, Traian, Poarta, Demarcapu, Causiani, Tataria, Botna, România, Ungaria]
+Sentiment Segments [( null, null, simplu) , ( null, null, avea) , ( null, null, trece) , ( null, null, întinde) , ( null, null, începe) , ( null, null, tăia) , ( null, null, termina) ]
+WeightS = 0.2857142857142857
+
+
+Osebit de hara­ciul acesta de peste an, pentru carele am arătat acum, mai dă Moldova încă și la Baeramul sau paștele turcesti ca un peșcheș Împăratului 8.750 de lei și două blane una de samur preț de 3.250 de lei și alta de râs; Validei Sultane adecă mumei Împăratului 7.500 de lei și o blană de râs; pentru ceară de făclii pentru curtea împărătească 9.000 lei; pentru seu de uns co­răbiile cele de oaste 18.000 de lei; lui Chizlar-­Agasi (mai mare peste fameni) 2.500 de lei și o blană de samur; Vizirului 7.500 de lei și o blană de mult preț, lui Chihaia 3.750 de lei și o blană de samur, Tefterdarului 500 lei și o blană de samur, lui Reis-Efendi 750 lei și o blană de samur.
+Normalized Sentence [ osebit de haraci acest de peste an  pentru car avea arăta acum  mai da moldova încă și la  sau   ca un peșcheș împărat       de leu și doi  una de samur preț de       de leu și alta de râs  valid sultană adecă mumă împărat       de leu și o blană de râs  pentru ceară de făclie pentru curte împărătesc       leu  pentru seu de uns cel de oaste        de leu  lui   mai mare peste famen        de leu și o blană de samur         de leu și o blană de mult preț  lui chihaie       de leu și o blană de samur       leu și o blană de samur  lui  efendi     leu și o blană de samur .]
+Entities [Reis Efendi, Chihaia, Chizlar, Baeramul, Moldova, Tefterdarului, Împăratului, Vizirului, Validei Sultane]
+Sentiment Segments [( null, mai, mare) , ( null, null, valid) , ( null, null, arăta) , ( null, null, mult) , ( null, null, împărătesc) , ( null, null, avea) , ( null, mai, da) ]
+WeightS = 1.7142857142857142
+
+
+Căci Istoricii Grecești și Latinești carii de toți învățații lumii sunt cu­noscuți a fi adevărați, ne arată lumina cea mai curată la pricina aceasta și eu nici nu cred că va tăgădui cineva că n'au fost ostași și cetățeni Romani popoarele acelea, pe care le-au răsădit Traian în Dacia, după ce a biruit el pe Craiul Decebal, risipind toată Împărăția Dacilor și când ne-ar lipsi și mărturiea aceasta, adecă: cum că Adrian după moartea lui Traian, dând barba­rilor multe țări din Asia, numai pentru aceia s'a oprit pe sineși a nu părăsi și Daciea, pentru că se temea să nu surpe atâtea mii de Romani, ce locuia într'însa; atuncea cetitoriul cel știutor de întâmplările vremilor celor vechi, voind ca să se încredințeze pentru adevărul pricinei a­ceștia, îi va fi din destul ca să-și aducă aminte numai de obiceiul cel necontenit al Romanilor, după care le era lor oprit a nu primi pe ni­minea în vreun legion de nu va fi din politic și de neam.
+Normalized Sentence [ căci istoric grec și latinesc carie de toți învățat lume fi cunoscut a fi adevărat  ne ara lumina cel mai cura la pricină acest și eu nici nu crede că vrea tăgădui cineva că n au fost ostaș și cetățean roman popor acel  pe car le au răsădi  în   după ce a biruit el pe crai   risipi toată împărăție dac și când ne avea lipsi și  acest  adecă  cum că  după moarte lui   da barbar mult țară din asia  numai pentru acel s a oprit pe sineși a nu părăsi și   pentru că se teme să nu surpa atâtea mii de roman  ce locui într   atuncea  cel știutor de întâmplare  celui vechi  voi ca să se încredința pentru adevăr  acest  îi vrea fi din destul ca să și aduce aminte numai de obicei cel necontenit al roman  după car le eră lor oprit a nu primi pe în vreun  de nu vrea fi din politic și de neam .]
+Entities [Adrian, Latinești, Daciea, Traian,  Istoricii Grecești, Craiul Decebal, Dacia, Romani, Asia, Împărăția Dacilor, Romanilor]
+Sentiment Segments [( null, null, mult) , ( null, null, părăsi) , ( null, null, istoric) , ( null, null, vrea) , ( null, null, oprit) , ( null, null, lipsi) , ( null, null, adevărat) , ( null, null, vrea) , ( null, null, fi) , ( null, null, vechi) , ( null, null, știutor) , ( null, null, dac) , ( null, null, cunoscut) , ( null, null, răsădi) , ( null, null, necontenit) , ( null, null, avea) , ( null, null, oprit) , ( null, null, tăgădui) , ( null, null, ara) , ( null, null, fi) , ( null, null, da) , ( null, null, fi) , ( null, null, destul) , ( null, null, fost) , ( null, null, barbar) , ( null, null, lumina) , ( null, null, primi) , ( null, null, încredința) , ( null, null, aduce) , ( null, null, crede) , ( null, null, politic) , ( nu, null, vrea) , ( null, null, voi) , ( nu, null, fi) ]
+WeightS = 0.5294117647058824
+
+
+Atuncea domnul dacă știe limba turcească, răspunde însuși la cuvintele Vizirului; iară dacă nu știe, apoi răspunde prin Dragomanul cel mare al curții și mulțumește pentru împărăteasca facere de bine care l'a întâmpinat nefiind el vrednic; și se făgăduește că va urma poruncilor trimese și toată puterea lui încă și viața o va jertfi bucuros la slujba Împăratului; și se roagă ca să nu-și întoarcă Împăratul mila sa de către dânsul.
+Normalized Sentence [ atuncea domn dac ști limbă turcesc  răspunde însuși la cuvânt   iară dac nu ști  apoi răspunde prin dragoman cel mare al curte și mulțumi pentru împărătesc facere de bine car l a întâmpina fi el vrednic  și se  că vrea urma poruncă  și toată putere lui încă și viață o vrea jertfi bucuros la slujbă împărat  și se ruga ca să nu și întoarce împărat milă sa de către dânsul .]
+Entities [Împăratul, Împăratului, Dragomanul, Vizirului]
+Sentiment Segments [( null, null, împărătesc) , ( null, null, bucuros) , ( null, null, mulțumi) , ( nu, null, întoarce) , ( null, null, fi) , ( null, null, răspunde) , ( null, null, ruga) , ( null, null, urma) , ( null, null, răspunde) , ( null, null, dac) , ( null, null, mare) , ( null, null, întâmpina) , ( null, null, dac) , ( null, null, vrea) , ( null, null, vrea) ]
+WeightS = 1.0666666666666667
+
+
+Când vine vreo poruncă dela curtea turcească sau când este de trebuință pentru alte pricini ale obștei, atuncea poruncește Domnul prin scrisoare, ca să se adune acolea acești șapte boieri și să facă sfat asupra pricinei aceștia; și adu­nându-se ei în vistierie se sfătuesc, și trimit înștiințare la Domni cu Visternicul cel mare, după cum au socotit că cere trebuința ca să se ur­meze; și dacă este plăcut Domnului sfatul lor, poruncește ca până într'atâtea zile să se pue pricina în lucrare.
+Normalized Sentence [ când vână vreo poruncă  curte turcesc sau când fi de trebuință pentru alta pricină ale   atuncea porunci domn prin scrisoare  ca să se aduna acolea acest șapte boieri și să face sfat asupra  acest  și aduna se ea în vistierie se   și trimite înștiințare la domn cu  cel mare  după cum au socotit că cere trebuință ca să se urma  și dac fi plăcea domn sfat lor  porunci ca până într atâtea zi să se  pricină în lucrare .]
+Entities [Visternicul, Domnului, Domni, Domnul]
+Sentiment Segments [( null, null, face) , ( null, null, porunci) , ( null, null, porunci) , ( null, null, cere) , ( null, null, socotit) , ( null, null, urma) , ( null, null, dac) , ( null, null, plăcea) , ( null, null, fi) , ( null, null, fi) , ( null, null, aduna) , ( null, null, trimite) , ( null, null, mare) , ( null, null, aduna) ]
+WeightS = 0.35714285714285715
+
+
+Când era sub ascultarea domnilor Moldovei, paza ei era încredințată unui comandant deosebit, iar de când au luat-o Turcii, o guverna un pașe turcesc contra încredințărilor de pace ce legaseră cu Polonii, că niciodată să nu se așeze în cetățile Moldovei oștire turcească.
+Normalized Sentence [ când eră sub ascultare domn moldova  pază ea eră încredința un comandant deosebit  iar de când au luat o turci  o guverna un pașă turcesc contră încredințare de pace ce lega cu polon  că niciodată să nu se așeza în cetate moldova oștire turcesc .]
+Entities [Turcii, Polonii, Moldovei]
+Sentiment Segments [( null, null, lega) , ( nu, null, așeza) , ( null, null, guverna) , ( null, null, încredința) , ( null, null, deosebit) ]
+WeightS = 1.0
+
+
+Ismailul, căruia Moldovenii îi zicea odinioară Smilu, cetate care nu e de desprețuit, cu oaste turcească comandată de un Mutecveli.
+Normalized Sentence [   care moldovean îi zice odinioară  cetate car nu e de   cu oaste turcesc comanda de un  .]
+Entities [Smilu, Moldovenii]
+Sentiment Segments [( null, null, zice) , ( null, null, comanda) , ( null, null, moldovean) ]
+WeightS = 0.6666666666666666
+
+
+Cum c'această cetate a fost întemeiată pe timpul lui Traian, ne încredințează monetele descoperite acolo în timpul nostru dar și o marmură c'următoare inscripțiune:
+Normalized Sentence [ cum c acest cetate a fost întemeia pe timp lui   ne încredința monetă descoperit acolo în timp nostru dar și o marmură c următoare inscripțiune .]
+Entities [Traian]
+Sentiment Segments [( null, null, fost) , ( null, null, încredința) , ( null, null, descoperit) ]
+WeightS = 0.3333333333333333
+
+
+El a fost un om foarte învățat în limba gre­cească și latinească și a fost tovarăș la școală cu acel vestit dascăl grecesc Ioan Lascar, a că­ruia răvașe trimise la dânsul stau și acum în cartea Cruzii, ce se numește Turcogreția; pen­trucă el a voit să iasă de sub stăpânirea turcească, străduindu-se după slobozenie, pentru aceia l-au prins turcii cu vicleșug și l-au rupt în două bucăți cu cămilele și au pus în locul lui pe:
+Normalized Sentence [ el a fost un om foarte învățat în limbă grec și latinesc și a fost tovarăș la școală cu acel vestit dascăl grec    a care răvaș trimis la dânsul sta și acum în carte crud  ce se numi   el a voit să ieși de sub stăpânire turcesc  strădui se după slobozenie  pentru acel l au prins turci cu vicleșug și l au rupt în doi bucăți cu cămilă și au pus în locul lui pe .]
+Entities [Turcogreția, Cruzii, Ioan Lascar]
+Sentiment Segments [( null, null, fost) , ( null, null, voit) , ( null, null, numi) , ( null, null, sta) , ( null, null, trimis) , ( null, null, fost) , ( null, null, strădui) , ( null, null, vestit) , ( null, null, prins) , ( null, null, crud) , ( null, null, bucăți) , ( null, null, rupt) , ( null, null, ieși) ]
+WeightS = -0.15384615384615385
+
+
+Și așa sosind el, merge drept la curtea Domnească și intrând în divan heritisește acolo pe boerii ce sunt adunați și dă fermanul în mâinile Caimacamilor, care sunt orânduiți de Domnul cel nou, pre carii îi arată lui cu degetul o slugă a Domnului celui nou, carele este trimis cu dânsul, îmbrăcat în strae turcești și când le dă el lor fermanul, le zice așa: „Domnul vostru este scos din stăpânire, deci să ascultați poruncile Dom­nului nou”.
+Normalized Sentence [ și așa sosi el  merge drept la curte domnesc și intrând în divan  acolo pe ce fi aduna și da  în mână caimacam  car fi orândui de domn cel nou  pre carie îi ara lui cu deget o slugă a domn celui nou  car fi trimis cu dânsul  îmbrăcat în  turcesc și când le da el lor   le zice așa   domn vostru fi scos din stăpânire  deci să asculta poruncă domn nou .]
+Entities [Domnească, Vizinul, Dom­nului, Domnului, Caimacamilor, Domnul]
+Sentiment Segments [( null, null, nou) , ( null, null, fi) , ( null, null, da) , ( null, null, ara) , ( null, null, merge) , ( null, null, fi) , ( null, null, drept) , ( null, null, trimis) , ( null, null, nou) , ( null, null, asculta) , ( null, null, da) , ( null, null, sosi) , ( null, null, nou) , ( null, null, zice) , ( null, null, fi) , ( null, null, fi) , ( null, null, aduna) , ( null, null, îmbrăcat) , ( null, null, orândui) ]
+WeightS = 0.6842105263157895
+
+
+Iară apoi mai în urmă după aceia, ispitindu-se Domnii de multe ori ca să-și lepede jugul și mai ales când se întâmpla și alte tulburări în țară, au găsit Turcii vreme cu prilej de au mai mă­rit birul acela, în cât acei 12 mii de galbeni, adică 30 de mii de lei s'au suit la 97 de mii și cinci sute de lei, care se plătesc acum la Visteria curții turcești.
+Normalized Sentence [ iară apoi mai în urmă după acel  ispiti se domnie de mult ori ca să și lepăda jug și mai alege când se întâmpla și alta tulburare în țară  au găsit turci vreme cu prilej de au mai mărita bir acel  în cât acel    mii de galben  adică    de mii de leu s au suit la    de mii și cinci sute de leu  car se plăti acum la visterie curte turcesc .]
+Entities [Turcii, Visteria, Domnii]
+Sentiment Segments [( null, null, mult) , ( null, null, lepăda) , ( null, null, întâmpla) , ( null, null, ispiti) , ( null, mai, mărita) , ( null, mai, alege) , ( null, null, galben) , ( null, null, plăti) ]
+WeightS = 0.0
+
+
+„Fiindcă Teodor Cantemir Pârcălabul de la Chilia și de la Smil, s'a arătat întru apărarea acestor cetăți ca o slugă credincioasă, și ca un ostaș viteaz al crucei lui Hs., împotriva năvă­litorilor turcești și tătărăști; însă pe urmă cu voia lui D-zeu, pustiind și luând Turcii toate locurile acestea și el prin puterea lor fiind si­lit ca să-și părăsească moșiile părintești, care au fost dăruite moșului și strămoșului său, de Domnii care au fost mai înainte de noi, pentru sluj­bele lor cele credincioase; pentru aceia din mila și din dragostea creștinească dăruim mai sus numitului Teodor Cantemir, trei sate în ținutul Fălciilor cu toate ale lor, pădure, câmp, ape și pescării; și-l facem mai mare preste tot codrul Tigheciului și Căpitan mare preste călărimea de Tigheciu; (care era pe atuncea la opt mii de oameni precum arată istoricii)” .
+Normalized Sentence [  fiindcă   pârcălab de la chilie și de la   s a arăta întru apărare acest cetate ca o slugă credincios  și ca un ostaș viteaz al  lui    împotriva năvălitor turcesc și tătărî  însă pe urmă cu voi lui d zeu  pustii și lua turci toate loc acest și el prin putere lor fi silit ca să și părăsi moșie părintesc  car au fost dărui moș și strămoș său  de domnie car au fost mai înainte de noi  pentru slujbă lor cel credincios  pentru acel din milă și din dragoste creștinesc dărui mai sus numit    trei sat în ținut falce cu toate ale lor  pădure  câmp  apă și pescări  și l face mai mare  tot codru  și căpitan mare  călărime de    car eră pe atuncea la opt mii de om precum ara istoric .]
+Entities [D, Turcii, Tigheciului, Domnii, Smil, DomnescFiindcă Teodor Cantemir Pârcălabul, Teodor Cantemir, Chilia, Hs, Fălciilor, Tigheciu, Căpitan]
+Sentiment Segments [( null, null, fost) , ( null, null, dărui) , ( null, null, viteaz) , ( null, null, dărui) , ( null, null, lua) , ( null, null, ara) , ( null, null, voi) , ( null, null, arăta) , ( null, null, pustii) , ( null, null, fi) , ( null, null, credincios) , ( null, null, părăsi) , ( null, null, mare) , ( null, mai, mare) , ( null, null, fost) , ( null, null, năvălitor) , ( null, null, credincios) , ( null, null, face) , ( null, null, istoric) ]
+WeightS = 0.6842105263157895
+
+
+În timpul din urmă s'a renumit prin Sfântul Ion cel nou, care a suferit moarte și martiru sub tirania turcească.
+Normalized Sentence [ în timp din urmă s a renumit prin sfânt ion cel nou  car a suferi mort și martir sub tiranie turcesc .]
+Entities [Sfântul Ion]
+Sentiment Segments [( null, null, renumit) , ( null, null, mort) , ( null, null, nou) ]
+WeightS = 0.6666666666666666
+
+
+Și pentru aceea boerii ca să numai pătimească și altă dată vreo întâm­plare ca aceea, ș'au lăsat la Turci toată volnicia alegerii, însă cu acest chip: ca să fie din neam domnesc și supus credinței pravoslavnice; și așa dupre așezământul acesta, au trimis turcii domn, tăind pe Barnovschi, pe:
+Normalized Sentence [ și pentru acel ca să numai pătimi și altă da vreo întâmplare ca acel  ș au lăsat la turci toată volnicie alegere  însă cu acest chip  ca să fi din neam domnesc și supus credință pravoslavnic  și așa dupre așezământ acest  au trimis turci domn  tăia pe   pe .]
+Entities [Barnovschi, Turci]
+Sentiment Segments [( null, null, supus) , ( null, null, fi) , ( null, null, tăia) , ( null, null, trimis) , ( null, null, pătimi) , ( null, null, da) ]
+WeightS = -1.1666666666666667
+
+
+Și când merge el la curtea Vizirului, descalecă la scară și i se dă titlul Domnesc de către Chiaia și de la alții și i se dă cafea și altele dupre obiceiul turcesc, dân­du-i toată cinstea care obișnuesc Turcii a o da Domnilor celor stăpânitori și mai înainte avea, atât Beizadelele Domnilor, cât și Domnii cei maziliți, dela vistieria împărătească o leafă ho­tărîtă pre toată ziua, dela cinci până la zece taleri împărătești.
+Normalized Sentence [ și când merge el la curte    la scară și i se da titlu domnesc de către  și de la alții și i se da cafea și alta dupre obicei turcesc  da i toată cinste car  turci a o da domn celui stăpânitor și mai înainte avea  atât beizadea domn  cât și domnie cel mazili   vistierie împărătesc o leafă pre toată zi   cinci până la zece taler împărătesc .]
+Entities [Turcii, Beizadelele Domnilor, Vizirului, Domnii, Chiaia, Domnilor, Domnesc]
+Sentiment Segments [( null, null, stăpânitor) , ( null, null, avea) , ( null, null, da) , ( null, null, împărătesc) , ( null, null, împărătesc) , ( null, null, merge) , ( null, null, da) , ( null, null, da) , ( null, null, da) ]
+WeightS = 1.7777777777777777
+
+
+Economia casii e asupra celor mai bătrâni și mai vechi și primirea oas­peților care se păzește pre la toate mănăstirile este foarte de lăudat, căci nemernicind orice strein, creștin, jidov, turc, sau armean, nu numai că au datorie să-l primească cu bucurie, ci încă și un an deplin, dacă voește să șează, trebue să-l hrănească după putința mănăstirei, cu cinste și fără de cârtire, împreună și pre toți cei ce sunt cu dânsul și dobitoacele sale.
+Normalized Sentence [ economie e asupra celui mai bătrân și mai vechi și primire oaspe car se păzi pre la toate mănăstire fi foarte de lăudat  căci nemernici orice strein  creștin  jidov  turc  sau armean  nu numai că au datorie să l primi cu bucurie  ci încă și un an deplin  dac  să    să l hrăni după putință   cu cinste și fără de cârtire  împreună și pre toți cel ce fi cu dânsul și dobitoacă sale .]
+Entities [Oricovius]
+Sentiment Segments [( null, mai, vechi) , ( null, null, păzi) , ( null, null, dac) , ( null, null, fi) , ( null, null, hrăni) , ( null, null, fi) , ( null, mai, bătrân) , ( null, null, primi) , ( null, null, deplin) ]
+WeightS = 1.3333333333333333
+
+
+Turcii până a nu li se supune, adesea dar în deșert bătură această cetate, dar ceeace nu putură cu forța câștigară în urmă prin frauda și perfidia lui Aron Vodă, căruia Moldovenii, îi ziseră și tiranul, pentru că fiind scos din țară pentru cruzimea și tirania cu care se purta, a fugit la împăratul turcesc și-i promise că de-l va readuce în domnie, îi va da Tighina cea de atâtea ori cerută împreună cu 12 sate și i-o va da pentru totdeauna.
+Normalized Sentence [ turci până a nu li se supune  adesea dar în deșerta bate acest cetate  dar  nu putea cu forța câștiga în urmă prin frauda și perfidie lui  vodă  care moldovean  îi zice și tiran  pentru că fi scos din țară pentru cruzime și tiranie cu car se purta  a fugi la împărat turcesc și i promis că de l vrea readuce în domnie  îi vrea da  cel de atâtea ori cere împreună cu    sat și i o vrea da pentru totdeauna .]
+Entities [Tighina, Aron Vodă, Moldovenii]
+Sentiment Segments [( null, null, da) , ( null, null, vrea) , ( null, null, moldovean) , ( null, null, bate) , ( null, null, purta) , ( null, null, fi) , ( null, null, da) , ( null, null, fugi) , ( nu, null, forța) , ( null, null, zice) , ( null, null, vrea) , ( null, null, vrea) , ( null, null, deșerta) , ( null, null, câștiga) , ( null, null, readuce) , ( nu, null, supune) , ( null, null, cere) ]
+WeightS = 0.23529411764705882
+
+
+înaintea Domnului și când începe Domnul a mânca, se slobod tunurile și se bate meterheneaua cea turcească și cea moldovenească.
+Normalized Sentence [ înaintea domn și când începe domn a mânca  se slobod tun și se bate  cel turcesc și cel moldovenesc .]
+Entities [Domnului, Domnul]
+Sentiment Segments [( null, null, mânca) , ( null, null, începe) , ( null, null, bate) ]
+WeightS = -0.3333333333333333
+
+
+Deși sta sub puterea turcească, nu se afla aci nici un turc; ostașii toți sunt creștini, toți Moldoveni, prefectul lor, tot creștin, numit Besliagasi, sta sub pașa dela Silistra, care totd'auna e seraschieriu.
+Normalized Sentence [ des sta sub putere turcesc  nu se afla aci nici un turc  ostaș toți fi creștin  toți moldovean  prefect lor  tot creștin  numit   sta sub pașa    car   e  .]
+Entities [Silistra, Mutecveli, Moldoveni, Besliagasi]
+Sentiment Segments [( null, null, des) , ( null, null, moldovean) , ( nu, null, afla) , ( null, null, sta) , ( null, null, fi) , ( null, null, sta) ]
+WeightS = 0.5
+
+
+Că acest obiceiu s'a păzit și sub stăpânirea turcească, întocma nesmintit, cât a fost neamul Dragoșesc.
+Normalized Sentence [ că acest  s a păzit și sub stăpânire turcesc  întocma nesmintit  cât a fost neam  .]
+Entities []
+Sentiment Segments [( null, null, fost) ]
+WeightS = 0.0
+
+
+Și prea știut este, că în vremile cele mai dincoace, prin puterea turcească răsăpindu-să crăiea Serbilor și crăiea Bulgarilor, împreună și scaunul Grecilor căzând sub stăpânire streină, multe neamuri boierești din cele mai de frunte ale popoarelor acestora, s'au tras la Moldova ca la locul cel de obștie pentru scăpare de pe vremea aceea și prin purtările lor cele cu cre­dință, au dobândit slavă și boierie.
+Normalized Sentence [ și prea știut fi  că în  cel mai dincoace  prin putere turcesc să   și  bulgar  împreună și scaun grec cădea sub stăpânire streină  mult neam boieresc din cel mai de frunte ale popor acest  s au tras la moldova ca la locul cel de obștie pentru scăpare de pe vreme acel și prin purtare lor cel cu credință  au dobândit slavă și boierie .]
+Entities [Moldova, Grecilor, Bulgarilor, Serbilor]
+Sentiment Segments [( null, null, mult) , ( null, null, știut) , ( null, null, fi) , ( null, null, cădea) ]
+WeightS = 0.0
+
+
+Și când va merge însuși Împăratul la răz­boiu, atuncia să trimeată și el la oastea turcească 4 mii de Moldoveni, ca să fie pentru deschisul drumurilor și pentru întocmirea podurilor; și această tocmeală cu așezământ a ținut mai un an24 pentru că Turcii fiind mulțumiți că au pus numai funia în capul boului Moldovenesc n'au cutezat s'o scurteze până ce l-au înblânzit.
+Normalized Sentence [ și când vrea merge însuși împărat la   să  și el la oaste turcesc   mii de moldovean  ca să fi pentru deschis drum și pentru întocmire pod  și acest tocmeală cu așezământ a ținut mai un an   pentru că turci fi mulțumi că au pus numai funie în cap bou moldovenesc n au cuteza s o scurta până ce l au  .]
+Entities [Moldovenesc, Împăratul, Turcii, Moldoveni]
+Sentiment Segments [( null, null, merge) , ( null, null, moldovean) , ( null, null, vrea) , ( null, null, cuteza) , ( null, null, fi) , ( null, null, deschis) , ( null, null, scurta) , ( null, null, mulțumi) , ( null, null, fi) ]
+WeightS = 0.7777777777777778
+
+
+Însă după aceia cu biruirea craiului Decebal, de Împăratul Nerva Traian, s'au gonit popoa­rele Dace din Daciea și țara s'a făcut ținut Romanesc, umplându-se cu popoare Romanești ș'au primit și legile Romanești dela locuitorii ei cei noi și au ținut atâta cât a fost țara supt stăpânirea împăraților Romanești și Țari­gradești.
+Normalized Sentence [ însă după acel cu biruire crai   de împărat    s au goni popor dac din  și țară s a făcut ținut romanesc  umple se cu popor romanesc ș au primit și lege romanesc  locuitor ea cel noi și au ținut atâta cât a fost țară supt stăpânire împărat romanesc și .]
+Entities [Împăratul Nerva Traian, Romanesc, Daciea, Dace, Romanești, Decebal]
+Sentiment Segments [( null, null, dac) , ( null, null, goni) , ( null, null, supt) , ( null, null, făcut) , ( null, null, umple) , ( null, null, fost) ]
+WeightS = -0.5
+
+
+Astăzi marginea Moldovei o formează Prutul dela gura sa până la satul lui Traian, iar de aci, valul lui Traian, care e dus prin apa Botnei și 'n linie dreaptă până la gura Bâcului, unde se varsă în Nistru, precum se vede clar în chartă.
+Normalized Sentence [ astăzi margine moldova o forma   gură sa până la sat lui   iar de aci  val lui   car e dus prin apă  și  n linie dreaptă până la gură   undă se vărsa în  precum se vede clar în  .]
+Entities [Botnei, Traian, Bâcului, Nistru, Moldovei, Prutul, Alpestre]
+Sentiment Segments [( null, null, vărsa) , ( null, null, dus) , ( null, null, clar) ]
+WeightS = 0.3333333333333333
+
+
+Baș bulu-bașa: acesta poruncește la zece bulu-bași sau căpitani, dintru carii fieștecarele are supt mâna sa mai câte o sută de Simeni, ce se numesc așa turcește și se înțelege ostașii aceia cari slujesc cu bună leafă dintre Sârbi, Bulgari, Arnăuți și Greci și sunt pentru straja Domnească din curte, cari necontenit se schimbă între sineși pre rând și au lăcașurile lor pre lângă zidul curții.
+Normalized Sentence [ baș   acest porunci la zece bas sau căpitan  dintr carie  ara supt mâna sa mai câte o sută de simen  ce se numi așa turcește și se înțelege ostaș acel car sluji cu bună leafă dintre sârb  bulgar  arnăut și grec și fi pentru strajă domnesc din curte  car necontenit se schimba între sineși pre rând și au lăcaș lor pre lângă zid curte .]
+Entities [Greci, SârbiBulgariArnăuți, Simeni, Domnească, Țării Românești]
+Sentiment Segments [( null, null, supt) , ( null, null, porunci) , ( null, null, mâna) , ( null, null, sluji) , ( null, null, ara) , ( null, null, fi) , ( null, null, necontenit) , ( null, null, numi) , ( null, null, schimba) ]
+WeightS = 0.2222222222222222
+
+
+Iar după ce Decebal regele acestora, fu învins prin vitejia lui Nerva Traian, Dacii fiind toți, parte stinși, parte răspândiți în toate părțile, toată țara lor fu prefăcută în provincie romană, dată cetățenilor romani și împărțită în trei părți, numite: Ripense, Mediterana și Alpestre.
+Normalized Sentence [ iar după ce  rege acest  fi învinge prin vitejie lui    dac fi toți  parte stins  parte răspândi în toate parte  toată țară lor fi prefăcut în provincie roman  da cetățean roman și împărți în trei parte  numit    mediterană și alpestru .]
+Entities [Nerva TraianDacii, RipenseMediterana, Decebal]
+Sentiment Segments [( null, null, fi) , ( null, null, stins) , ( null, null, fi) , ( null, null, învinge) , ( null, null, împărți) , ( null, null, prefăcut) , ( null, null, da) , ( null, null, răspândi) , ( null, null, fi) , ( null, null, dac) ]
+WeightS = -0.3
+
+
+Iară veniturile cele pentru obște, nu sunt așe­zate după putința locuitorilor, ci după măsura lăcomiei turcești; căci aceia ce cer ei, nu se poate a nu se primi; și Domnul nu este silit ca să dea și el din venitul său ajutor locuitorilor pentru ușurarea lor.
+Normalized Sentence [ iară venit cel pentru obște  nu fi așezat după putință locuitor  ci după măsura lăcomie turcesc  căci acel ce cer ea  nu se putea a nu se primi  și domn nu fi silit ca să da și el din venit său ajutor locuitor pentru ușurare lor .]
+Entities [Domnul]
+Sentiment Segments [( null, null, fi) , ( nu, null, primi) , ( null, null, da) , ( null, null, fi) , ( nu, null, așezat) ]
+WeightS = 0.2
+
+
+Adauge apoi monumentul sempitern al acestui lucru adică Valul împăratului Traian, care până 'n ziua de astăzi păstrează numele întemeietorului său, despre care mă mir cum de nu memorează nici unul din vechii sau marii istorici.
+Normalized Sentence [ adăuga apoi monument sempitern al acest lucru adică val împărat   car până  n zi de astăzi păstra nume întemeietor său  despre car mă mir cum de nu memora nici unul din vechi sau mare istoric .]
+Entities [Traian, Valul]
+Sentiment Segments [( null, null, vechi) , ( null, null, istoric) , ( null, null, adăuga) , ( null, null, păstra) , ( null, null, mare) ]
+WeightS = 1.6
+
+
