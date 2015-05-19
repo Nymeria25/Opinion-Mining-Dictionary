@@ -1,126 +1,204 @@
-Iară ieste altul, de neamul său leah, Iane Zamovschii, care orbŭ năvăléște, zicândŭ că nu suntŭ moldovénii, nici munténii din râmléni, ci trecândŭ pre aicea, pre aceste locuri, Traianŭ-împăratul și lăsândŭ slujitori de pază, au apucat o samă de dachi limba râmlenească.
-Normalized Sentence [ iară  altul  de neam său leah    car orb năvăli  zice că nu fi moldovean  nici muntean din râmlean  ci trece pre aicea  pre acest loc  împărat și lăsa slujitor de pază  au apucat o samă de  limbă  .]
-Entities [Iane Zamovschii, Traianŭ]
-
-
-Iară mării din care iese limba acéia îi zicŭ latinii Marea Mediteraneum, adecă marea den mijlocul pământului; turcii, grecii și noi zicem Marea Albă.
-Normalized Sentence [ iară mări din car ieși limbă acel îi zice latin mare   adecă mare  mijloc pământ  turci  grec și noi zice mare albă .]
-Entities [Marea Mediteraneum]
-
-
-Iară nu numai numele acesta, precum ai înțeles că ieste tot unul, la toate țările, și al tău și Italiei, precum vei înțelége și mai pre largŭ, la capul deosebi de numele acestor țări, că și turcii și grecii ne zic vlah, ce și dintr-altele te vei cunoaște: obicéiuri, hire, graiul și pănă astăzi, că ești dreptŭ vloh, adecă italiian și râmlean.
-Normalized Sentence [ iară nu numai nume acest  precum avea înțeles că  tot unul  la toate țară  și al tău și italia  precum vrea înțelege și mai pre larg  la cap deosebi de nume acest țară  că și turci și grec ne zice vlah  ce și dintr alta te vrea cunoaște  obicei    grai și  astăzi  că fi drept   adecă italian și râmlean .]
-Entities [Marea Albă, Italiei]
-
-
-Pre acélŭ Ovidius l-au făcut, cum zicŭ turcii, surgunŭ, de l-au gonit din Râm tocma la Cetatea Albă, pre Marea Neagră Avgust-chesariŭ, împăratul Râmului, pentru niște cărți ce scrisése în stihuri de dragoste, de să umplusă Râmul de curvii dintru acéle jocuri ale lui, cum fac și moscalii, de trimit la zatocenii, adecă în urgie, la Sibir, și pănă acum.
-Normalized Sentence [ pre acel  l au făcut  cum zice turci   de l au goni din  tocma la cetate albă  pre mare negru   împărat   pentru niște carte ce scrie în stih de dragoste  de să   de curvi dintr ac joc ale lui  cum face și moscal  de trimite la  adecă în urgie  la sibir  și  acum .]
-Entities [Marea Neagră Avgust, Ovidius, Cetatea Albă, Râmului, Sibir, Râmul, Râm]
-
-
-Și dintr-acești dahi noi zicem și grecii, dachi, iară latinii și léșii, dații să țin sasii de Ardeal (și pănă nu de multŭ au fostŭ și la noi în țară, iară la satile céle hănești, la Bugeac și acum suntŭ, de le zic testebani) că să tragŭ și au mari istorici martori.
-Normalized Sentence [ și dintr acest  noi zice și grec    iară latin și leș  dat să ține de   și  nu de mult au fost și la noi în țară  iară la  cel   la  și acum fi  de le zice   că să trage și au mare istoric martor .]
-Entities [Ardeal, Bugeac]
-
-
-Puternică într-o vréme, cât supt vrémea Împărăției Râmului supt Domentiian-împăratŭ, iară la Dachia crăind Decheval-craiul, lua dachii o sumă de bani din visteriia Râmului, cum lua tătarii de Crâmŭ de la Moscŭ și de la léși, să nu le robească țările, că prăda și dachii Italiia cu călărimea, pănă în zilele lui Traian-împăratul, ce au împărățitŭ pre urma lui Domentian-împăratul.Pentru ei a fost ceva ce nu se putea uita.
-Normalized Sentence [ puternic într o vreme  cât supt vreme împărăție  supt împărat  iară la    crai  lua o sumă de ban din visterie   cum lua tătar de de la mosc și de la leș  să nu le robi țară  că prăda și italia cu călărime   în zi lui  împărat  ce au împărăți pre urma lui  împărat pentru ea a fost ceva ce nu se putea uita .]
-Entities [Crâmŭ, Domentiian, Împărăției Râmului, Dachia, Pentru, Traian, Domentian, Râmului, Moscŭ, Decheval, Italiia]
-
-
-Traian, împăratul Râmului, al șaptelea după Avgustu-chesar, de neamul său șpaniol, coprinzândŭ scaunul împărăției după Domentian și văzândŭ la slăbiciune împărățiia sosită, din rea și desfrânată cârma împăraților răi și zburdați (că și Dioclitiian și cela lumii ocara și tiranul Neron, totŭ înaintea lui Traian au fostŭ), întăi au așezatŭ împărățiia în ce era stricată și veniturile ei, apoi îndată s-au apucatŭ de oaste împrotiva tuturora carii ieșisă de suptŭ ascultarea împărății țări și întăi ales asupra dachilor, țiitoriiul acestor părți.
-Normalized Sentence [   împărat   al șaptelea după   de neam său   coprinde scaun împărăție după  și vedea la slăbiciune împărăție sosi  din rău și desfrâna cârmă împărat rău și zburda  că și și cela lume ocară și tiran   tot înaintea lui  au fost    au așezat împărăție în ce eră strica și venit ea  apoi îndată s au apucat de oaste  tuturora carie  de supt ascultare împărăți țară și  alege asupra   acest parte .]
-Entities [Neron, Dioclitiian, Traian, Domentian, Râmului, Avgustu]
-
-
-Așa să întărisă neamul dachilor asupra Împărăției Râmului, câtŭ scriu istoricii, în zilele lui Domentian-împăratul și birŭ lua din vistieriia Râmului, pentru să nu strice țările împărăției cu prăzi, că fiind neamul dachilor pre acéle vremi călăreți, prăda țărâle ascultătoate de Împărățiia Râmului cu călărimea, pănă și Italiia de prăzile lor nu hălăduia, cum am văzut în vacul nostru pre tătarii Crâmului, fiind mai puțini decâtŭ oștile Moscului și a Crăiei Leșești și de la amundoao acéstea neamuri lua daruri, pentru să nu facă cu ceambulurile lor stricăciune țărâlor lor.
-Normalized Sentence [ așa să  neam  asupra împărăție   cât scrie istoric  în zi lui  împărat și bir lua din vistierie   pentru să nu strica țară împărăție cu pradă  că fi neam  pre ac  călăreț  prăda   de împărăție  cu călărime   și italia de pradă lor nu   cum avea văzut în  nostru pre tătar   fi mai puțin decât oaste mosc și a crăie leșesc și de la  acest neam lua dar  pentru să nu face cu  lor stricăciune  lor .]
-Entities [Împărăției Râmului, Crâmului, Râmului, Domentian, Crăiei Leșești, Moscului, Italiia, Împărățiia Râmului]
-
-
 Întăi, dară, Traian, marile și vestit împărat, au făcut oaste împrotiva dachilor, cum scrie Dion, carile au scris viiața acestui împărat și alți istorici după dânsul, 600.000 de oaste, slujitori de oaste au avut, fără altă mulțime, ce să trage dupe oști, ales după oști mari, mulțime, și au purces din Italiia spre acéste părți ale Dunării.
 Normalized Sentence [   dară    mare și vestit împărat  au făcut oaste    cum scrie    au scris viață acest împărat și alt istoric după dânsul          de oaste  slujitor de oaste au avut  fără altă mulțime  ce să trage  oști  alege după oști mare  mulțime  și au purces din italia spre acest parte ale dunăre .]
 Entities [Traian, Dion, Italiia]
-
-
-Împrotiva căruia nici Decheval craiul dachilor așa fără războiŭ nu s-au lăsat, ci trecândŭ cu oștile sale Dunărea, au stătut împrotiva lui Traianŭ, împăratul cu războiŭ în Țările Misii, căriia îi zicem noi Dobrogea.
-Normalized Sentence [  care nici  crai  așa fără nu s au lăsat  ci trece cu oaste sale dunăre  au stătut  lui  împărat cu în țară misie  îi zice noi  .]
-Entities [Țările Misii, Dunării, Decheval, Traianŭ, Dunărea]
-
-
-Așa Decheval, craiul dachilor, luptându-să câteva zile să oprească oștile lui Traian, n-au putut birui, ci au purces oștile din războiŭ în răsipă.
-Normalized Sentence [ așa   crai   lupta să câteva zi să opri oaste lui   n au putea birui  ci au purces oaste din în  .]
-Entities [Traian, Dobrogea Decheval]
-
-
-Și i-au ieșitŭ iară cu oștile sale Decheval, craiul dachilor, la care războiŭ stândŭ tare dachii și craiul cu ei, însuși craiul au pieritŭ la acel războiŭ.
-Normalized Sentence [ și i au ieșit iară cu oaste sale   crai   la car sta tară și crai cu ea  însuși crai au pierit la acel .]
-Entities [Decheval]
-
-
-Și așa au purces, după acel războiŭ pierdut și pierirea craiului lor, totŭ neamul dachilor în răsipă de pe acéste țări, unde ieste acum Țara Muntenească și țara noastră, Moldova.
-Normalized Sentence [ și așa au purces  după acel pierdut și pierire crai lor  tot neam  în  de pe acest țară  undă  acum țară muntenesc și țară noastră  moldova .]
-Entities [Țara Muntenească]
-
-
-Măcară că capetile dachilor, domnii cu toate casile lor, s-au tras toți peste munți în Ardeal și de acolo s-au închinatŭ cu toții la Traian-împăratul, totŭ nu i-au crezut, ce și peste munți pentre dachi au discălicatŭ râmléni, pentru să nu mai poată a-și rădica capul dachii împrotiva împărății, carii vedem și pănă astăzi în tot Ardealul și în țările de sus céle ungurești mai în jumătate cu ungurii, români, adecă râmléni, suntŭ lăcuitori pănă astăzi.
-Normalized Sentence [  că    domnie cu toate  lor  s au tras toți peste munte în  și de acolo s au închina cu toți la  împărat  tot nu i au crede  ce și peste munte   au râmlean  pentru să nu mai putea a și rădica cap  împărăți  carie vedea și  astăzi în tot  și în țară de sus cel ungurească mai în jumătate cu ungur  român  adecă râmlean  fi lăcuitor  astăzi .]
-Entities [Ardeal, Moldova, Traian, Ardealul]
-
-
-A treia pricină și mai mare decâtŭ acéle doao ce s-au poménitŭ, că râmlénii din toată lumea lua a zécea din oameni tineri, cum lua turcii din Rumele; zicea râmlénii acelor oameni obsides, adecă zalog de credință țărâlor.
-Normalized Sentence [ a treia pricină și mai mare decât ac  ce s au pomenit  că râmlean din toată lume lua a zecea din om tânăr  cum lua turci din   zice râmlean ac om   adecă  de credință  .]
-Entities [Rumele]
-
-
-Multe obicéiuri de ale Râmului suntŭ acum la turci ca acéstea, ce iau și ei de a zecea oameni și iară așa îi împart pre la grădini întăi, apoi în ceata ienicerilor și fac și ei apoi din slujitori bătrâni oturaci, curugii și timaruri.
-Normalized Sentence [ mult obicei de ale  fi acum la turci ca acest  ce lua și ea de a zecea om și iară așa îi împărți pre la grădină   apoi în ceată ienicer și face și ea apoi din slujitor bătrân   și timar .]
-Entities [Râmului]
-
-
-Toate acestea și altile multe obicéiuri de la Împărățiia Râmului suntŭ, că și ienicerii cum suntŭ acum la turci, la Râm pritoriiani, adecă pedestrime de divan le zice, cum la turci culoglŭ și așa bulucurile pre numere: biringi, ichingi, iuciungi; la râmléni primani, secundani, terțiiani, cvartani, tot pre numere bulucurile, adecă: cei dintăi, cei ai doilea, cei ai treilea, cei ai patrulea, pre numărŭ să știia bulucurile.
-Normalized Sentence [ toate acest și  mult obicei de la împărăție  fi  că și ienicer cum fi acum la turci  la   adecă pedestrime de divan le zice  cum la turci și așa buluc pre număr        la râmlean        tot pre număr buluc  adecă  cel   cel avea doi  cel avea treilea  cel avea patrulea  pre număr să ști buluc .]
-Entities [Râm, Împărățiia Râmului]
-
-
-Și nu-i divă că la turci vedem obicéiurile acéstea, care au fostŭ și la Împărățiia Râmului, căci că Țarigradul și câte țări țin turcii în ceastă parte de lume, care să chiamă Evropa, parte de Împărățiia Râmului ieste.
-Normalized Sentence [ și nu i divă că la turci vedea obicei acest  car au fost și la împărăție   căci că  și câte țară ține turci în  parte de lume  car să    parte de împărăție   .]
-Entities [Țarigradul, Evropa, Împărățiia Râmului]
-
-
-Și aicea la noi, să zicem că de la capul șanțului, de unde să încépe totul, pe deasupra Galaților, alăturea cu Dunărea mérge pre aproape și peste Prut, iar nu departe de Dunăre, pre la satul turcesc acum, Troianul; dară deci unde să dipărtează la câmpi și de la Dunăre și de la Marea Neagră, iar peste apa Nistrului, ca mai departe mérge peste câmpi pe la târgul Vciorașnoe, pre unde l-am trecut eu, mai pe din sus de Chiov lovéște la Nipru și de la Niprul cu mai mare depărțime de mare, la Don.
-Normalized Sentence [ și aicea la noi  să zice că de la cap șanț  de undă să începe tot  pe deasupra   alăturea cu dunăre merge pre aproape și peste   iar nu departe de dunăre  pre la sat turcesc acum  troian  dară deci undă să  la  și de la dunăre și de la mare negru  iar peste apă   ca mai departe merge peste  pe la târg   pre undă l avea trecut eu  mai pe din sus de  lovi la și de la  cu mai mare  de mare  la  .]
-Entities [Dunăre, Nipru, Prut, Galaților, Vciorașnoe, Marea Neagră, Chiov, Niprul, Troianul, Nistrului, Dunărea]
-
-
-Mai de crezut suntŭ acéia carii țin că Traianu-împăratul au săpat acesta șanțŭ în vécinica pomenire și veste și să să știe șleavul oștii de ceia carii să tragŭ după oști mari, niguțători și oșténi, cum vedem și acum pre împărații turcești și vezirii lor, pre unde mergŭ cu oștile, fac movile pe șleavul oștilor și pentru véstea și pentru îndireptarea celora ce vin, ori oșténi, ori olăcari, ori niguțători, pre urmă dupre oști.
-Normalized Sentence [ mai de crede fi acel carie ține că împărat au săpat acest șanț în vecinic pomenire și veste și să să ști  oști de  carie să trage după oști mare   și oștean  cum vedea și acum pre împărat turcesc și lor  pre undă merge cu oaste  face movilă pe  oaste și pentru veste și pentru   ce vin  ori oștean  ori olăcar  ori   pre urmă dupre oști .]
-Entities [Traianu, Don]
-
-
-Și oricum, într-alt chip a fi nu poate, numai ce sunt făcute de dachii cei vechi.
-Normalized Sentence [ și oricum  într alt chip a fi nu putea  numai ce fi făcut de cel vechi .]
-Entities []
-
-
-Că întăiu Cetatea Albă, mai înainte de Traian au fost, că Avgustu-chesariul, care împătat a Râmului acmu triimitea și el boierii cei greșiți la închisoare, cum dzic turcii, surgun, la Cetatea Albă, unde și pe un dascal anume Poblius Ovidius, l-au trimis pentru niște stihuri de dragoste, ce scrisése acel dascal, de îndemnase Râmul la curvie, carele au și murit în Cetatea Albă.
-Normalized Sentence [ că  cetate albă  mai înainte de  au fost  că   car  a  trimite și el boieri cel greși la închisoare  cum zice turci    la cetate albă  undă și pe un  anume    l au trimis pentru niște stih de dragoste  ce scrie acel   de îndemna  la curvie  car au și muri în cetate albă .]
-Entities [Poblius Ovidius, Traian, Cetatea Albă, Râmului, Avgustu, Râmul]
-
-
-Aflu pomenită cetatea Chilii, carii o scrie în v leat 6973 (1465) că au luat-o Ștefan-vodă cel Bun de la turci, ș-apoi la v let 6987 (1479) iunie 22 dzăli, că în cestu an au început Ștefan-vodă a zidi cetatea Chilii și au și săvârșit-o într-acelaș an.
-Normalized Sentence [ afla pomeni cetate chilie  carie o scrie în v leat             că au luat o  vodă cel bun de la turci  ș apoi la v              iunie     că în cest an au început  vodă a zidi cetate chilie și au și săvârșit o într  an .]
-Entities [Chilii, Bun, Cetatea Albă, Ștefan]
+Sentiment Segments [( null, null, avut) , ( null, null, trage) , ( null, null, mare) , ( null, null, scris) , ( null, null, vestit) , ( null, null, făcut) , ( null, null, istoric) , ( null, null, alege) , ( null, null, mare) ]
 
 
 Dar mă mir cum încape acestu lucru, că întăiŭ scrie că au răscumpărat-o de la turci, închinată de nevoie, ș-apoi să o zidească, cum va fi acel lucru?
 Normalized Sentence [ dar mă mir cum încăpea acest lucru  că scrie că au răscumpărat o de la turci  închina de nevoie  ș apoi să o zidi  cum vrea fi acel lucru .]
 Entities []
+Sentiment Segments [( null, null, încăpea) , ( null, null, fi) , ( null, null, vrea) ]
+
+
+A treia pricină și mai mare decâtŭ acéle doao ce s-au poménitŭ, că râmlénii din toată lumea lua a zécea din oameni tineri, cum lua turcii din Rumele; zicea râmlénii acelor oameni obsides, adecă zalog de credință țărâlor.
+Normalized Sentence [ a treia pricină și mai mare decât ac  ce s au pomenit  că râmlean din toată lume lua a zecea din om tânăr  cum lua turci din   zice râmlean ac om   adecă  de credință  .]
+Entities [Rumele]
+Sentiment Segments [( null, mai, mare) , ( null, null, lua) , ( null, null, tânăr) , ( null, null, zice) , ( null, null, lua) ]
+
+
+Turcii, de pre locul lor, Turhistan, de pe capul lor cel dintăi Osmangic: otomani, osmanlâi.
+Normalized Sentence [ turci  de pre locul lor    de pe cap lor cel    otoman  osmanlâu .]
+Entities [Osmangic, Turhistan]
+Sentiment Segments []
+
+
+Și acestŭ nume vlah de la turci și de la greci ieste, de la némți vallios, de la franțoji valahos, de la léși voloșin, de la moscali și de la rusi tot așa voloșin și de la unguri olah; acesta nume tot de pe vloh ieste și vloh ieste italiianŭ, din care țări a vlohului, adecă a Italiei, au pornitŭ Traian, împăratul Râmului, fără număr mulțime de norod și i-au așezatŭ în aceste țări a Dachiei cei vechi.
+Normalized Sentence [ și acest nume vlah de la turci și de la grec   de la neamț   de la    de la leș   de la moscal și de la  tot așa  și de la ungur   acest nume tot de pe   și   italian  din car țară a   adecă a italia  au pornit   împărat   fără număr mulțime de norod și i au așezat în acest țară a  cel vechi .]
+Entities [Dachiei, Traian, Râmului, Italiei]
+Sentiment Segments [( null, null, vechi) , ( null, null, vlah) , ( null, null, așezat) ]
+
+
+Cum vedem neamul nemțescŭ suptŭ acéste numere: întăi și mai ales și mai de cinste: alamani și așa le zic istoriile céle vechi și turcii; al doilea nume: gherman, adecă doi frați, latinéște ghermanus; o seamă de istorici le zicŭ tevtones, di pre capul lor Tevton, italiianii zicu tudesco, poate fi iară di pre Tevton; léșii, moscalii, noi zicem némți.
+Normalized Sentence [ cum vedea neam nemțesc supt acest număr   și mai alege și mai de cinste  alamani și așa le zice istorie cel vechi și turci  al doi nume    adecă doi frate  latinește   o seamă de istoric le zice    pre cap lor   zice   putea fi iară  pre   leș  moscal  noi zice neamț .]
+Entities [Tevton]
+Sentiment Segments [( null, null, zice) , ( null, null, vedea) , ( null, mai, alege) , ( null, null, zice) , ( null, null, zice) , ( null, null, vechi) , ( null, null, istoric) , ( null, null, zice) , ( null, null, supt) , ( null, null, fi) ]
+
+
+Pre acélŭ Ovidius l-au făcut, cum zicŭ turcii, surgunŭ, de l-au gonit din Râm tocma la Cetatea Albă, pre Marea Neagră Avgust-chesariŭ, împăratul Râmului, pentru niște cărți ce scrisése în stihuri de dragoste, de să umplusă Râmul de curvii dintru acéle jocuri ale lui, cum fac și moscalii, de trimit la zatocenii, adecă în urgie, la Sibir, și pănă acum.
+Normalized Sentence [ pre acel  l au făcut  cum zice turci   de l au goni din  tocma la cetate albă  pre mare negru   împărat   pentru niște carte ce scrie în stih de dragoste  de să   de curvi dintr ac joc ale lui  cum face și moscal  de trimite la  adecă în urgie  la sibir  și  acum .]
+Entities [Marea Neagră Avgust, Ovidius, Cetatea Albă, Râmului, Sibir, Râmul, Râm]
+Sentiment Segments [( null, null, face) , ( null, null, trimite) , ( null, null, zice) , ( null, null, goni) , ( null, null, făcut) , ( null, null, mare) , ( null, null, negru) ]
+
+
+Și i-au ieșitŭ iară cu oștile sale Decheval, craiul dachilor, la care războiŭ stândŭ tare dachii și craiul cu ei, însuși craiul au pieritŭ la acel războiŭ.
+Normalized Sentence [ și i au ieșit iară cu oaste sale   crai   la car sta tară și crai cu ea  însuși crai au pierit la acel .]
+Entities [Decheval]
+Sentiment Segments [( null, null, sta) , ( null, null, ieșit) ]
+
+
+Apoi mai târziu, turcii, de pre numere domnului carile au închinat țara întăi la turci, ne zic bogdani, munténilor cara-vlah, grecii bogdano-vlah, munténilor vlahos.
+Normalized Sentence [ apoi mai târziu  turci  de pre număr domn  au închina țară  la turci  ne zice   muntean  vlah  grec  vlah  muntean  .]
+Entities []
+Sentiment Segments [( null, null, vlah) , ( null, null, zice) , ( null, mai, târziu) , ( null, null, vlah) ]
+
+
+La acestea și obiceiul ce stă încă într-aceste țări, adecă aicè la noi și la muntèni și la darea datoriei de opște, adecă la moarte, vechiŭ obiceiŭ, că dzice Topeltin: În Ardeal dachilor, obiceiŭ cu mare petrecere a duce mortul la groapnița; mărgŭ înaintea boierilor cântăreții și preuții, pe urmă viniia cielaltă mulțime, închipuind cum și ceielalți vor mérge unde și cel mortŭ, ca cum ar dzice: mergi, că noi te vom urma.
+Normalized Sentence [ la acest și obicei ce sta încă într acest țară  adecă aice la noi și la muntean și la dare datorie de   adecă la mort   că zice   în    cu mare petrecere a duce mort la   înaintea boier și  pe urmă  mulțime  închipui cum și  vrea merge undă și cel mort  ca cum avea zice  merge  că noi te vrea urma .]
+Entities [TopeltinÎn Ardeal]
+Sentiment Segments [( null, null, merge) , ( null, null, mort) , ( null, null, mare) , ( null, null, zice) , ( null, null, vrea) , ( null, null, avea) , ( null, null, mort) , ( null, null, zice) , ( null, null, urma) , ( null, null, închipui) , ( null, null, vrea) , ( null, null, merge) , ( null, null, sta) , ( null, null, mort) ]
+
+
+Măcară că capetile dachilor, domnii cu toate casile lor, s-au tras toți peste munți în Ardeal și de acolo s-au închinatŭ cu toții la Traian-împăratul, totŭ nu i-au crezut, ce și peste munți pentre dachi au discălicatŭ râmléni, pentru să nu mai poată a-și rădica capul dachii împrotiva împărății, carii vedem și pănă astăzi în tot Ardealul și în țările de sus céle ungurești mai în jumătate cu ungurii, români, adecă râmléni, suntŭ lăcuitori pănă astăzi.
+Normalized Sentence [  că    domnie cu toate  lor  s au tras toți peste munte în  și de acolo s au închina cu toți la  împărat  tot nu i au crede  ce și peste munte   au râmlean  pentru să nu mai putea a și rădica cap  împărăți  carie vedea și  astăzi în tot  și în țară de sus cel ungurească mai în jumătate cu ungur  român  adecă râmlean  fi lăcuitor  astăzi .]
+Entities [Ardeal, Moldova, Traian, Ardealul]
+Sentiment Segments [( nu, null, crede) , ( null, null, vedea) , ( null, null, fi) ]
+
+
+Traian, împăratul Râmului, al șaptelea după Avgustu-chesar, de neamul său șpaniol, coprinzândŭ scaunul împărăției după Domentian și văzândŭ la slăbiciune împărățiia sosită, din rea și desfrânată cârma împăraților răi și zburdați (că și Dioclitiian și cela lumii ocara și tiranul Neron, totŭ înaintea lui Traian au fostŭ), întăi au așezatŭ împărățiia în ce era stricată și veniturile ei, apoi îndată s-au apucatŭ de oaste împrotiva tuturora carii ieșisă de suptŭ ascultarea împărății țări și întăi ales asupra dachilor, țiitoriiul acestor părți.
+Normalized Sentence [   împărat   al șaptelea după   de neam său   coprinde scaun împărăție după  și vedea la slăbiciune împărăție sosi  din rău și desfrâna cârmă împărat rău și zburda  că și și cela lume ocară și tiran   tot înaintea lui  au fost    au așezat împărăție în ce eră strica și venit ea  apoi îndată s au apucat de oaste  tuturora carie  de supt ascultare împărăți țară și  alege asupra   acest parte .]
+Entities [Neron, Dioclitiian, Traian, Domentian, Râmului, Avgustu]
+Sentiment Segments [( null, null, rău) , ( null, null, supt) , ( null, null, sosi) , ( null, null, rău) , ( null, null, strica) , ( null, null, așezat) , ( null, null, fost) , ( null, null, alege) , ( null, null, vedea) , ( null, null, apucat) ]
+
+
+Împrotiva căruia nici Decheval craiul dachilor așa fără războiŭ nu s-au lăsat, ci trecândŭ cu oștile sale Dunărea, au stătut împrotiva lui Traianŭ, împăratul cu războiŭ în Țările Misii, căriia îi zicem noi Dobrogea.
+Normalized Sentence [  care nici  crai  așa fără nu s au lăsat  ci trece cu oaste sale dunăre  au stătut  lui  împărat cu în țară misie  îi zice noi  .]
+Entities [Țările Misii, Dunării, Decheval, Traianŭ, Dunărea]
+Sentiment Segments [( null, null, trece) , ( null, null, zice) , ( null, null, stătut) ]
+
+
+Așa să întărisă neamul dachilor asupra Împărăției Râmului, câtŭ scriu istoricii, în zilele lui Domentian-împăratul și birŭ lua din vistieriia Râmului, pentru să nu strice țările împărăției cu prăzi, că fiind neamul dachilor pre acéle vremi călăreți, prăda țărâle ascultătoate de Împărățiia Râmului cu călărimea, pănă și Italiia de prăzile lor nu hălăduia, cum am văzut în vacul nostru pre tătarii Crâmului, fiind mai puțini decâtŭ oștile Moscului și a Crăiei Leșești și de la amundoao acéstea neamuri lua daruri, pentru să nu facă cu ceambulurile lor stricăciune țărâlor lor.
+Normalized Sentence [ așa să  neam  asupra împărăție   cât scrie istoric  în zi lui  împărat și bir lua din vistierie   pentru să nu strica țară împărăție cu pradă  că fi neam  pre ac  călăreț  prăda   de împărăție  cu călărime   și italia de pradă lor nu   cum avea văzut în  nostru pre tătar   fi mai puțin decât oaste mosc și a crăie leșesc și de la  acest neam lua dar  pentru să nu face cu  lor stricăciune  lor .]
+Entities [Împărăției Râmului, Crâmului, Râmului, Domentian, Crăiei Leșești, Moscului, Italiia, Împărățiia Râmului]
+Sentiment Segments [( null, null, istoric) , ( null, null, lua) , ( null, null, fi) , ( null, mai, puțin) , ( null, null, fi) , ( null, null, prăda) , ( null, null, avea) , ( null, null, face) , ( null, null, strica) , ( null, null, lua) ]
+
+
+Iară mării din care iese limba acéia îi zicŭ latinii Marea Mediteraneum, adecă marea den mijlocul pământului; turcii, grecii și noi zicem Marea Albă.
+Normalized Sentence [ iară mări din car ieși limbă acel îi zice latin mare   adecă mare  mijloc pământ  turci  grec și noi zice mare albă .]
+Entities [Marea Mediteraneum]
+Sentiment Segments [( null, null, zice) , ( null, null, zice) , ( null, null, mare) , ( null, null, latin) , ( null, null, mare) , ( null, null, ieși) , ( null, null, mare) ]
+
+
+Și dintr-acești dahi noi zicem și grecii, dachi, iară latinii și léșii, dații să țin sasii de Ardeal (și pănă nu de multŭ au fostŭ și la noi în țară, iară la satile céle hănești, la Bugeac și acum suntŭ, de le zic testebani) că să tragŭ și au mari istorici martori.
+Normalized Sentence [ și dintr acest  noi zice și grec    iară latin și leș  dat să ține de   și  nu de mult au fost și la noi în țară  iară la  cel   la  și acum fi  de le zice   că să trage și au mare istoric martor .]
+Entities [Ardeal, Bugeac]
+Sentiment Segments [( null, null, trage) , ( null, null, zice) , ( null, null, fost) , ( null, null, ține) , ( null, null, fi) , ( null, null, zice) , ( null, null, mare) , ( null, null, istoric) , ( null, null, dat) , ( null, null, latin) , ( nu, null, mult) ]
+
+
+Și așa au purces, după acel războiŭ pierdut și pierirea craiului lor, totŭ neamul dachilor în răsipă de pe acéste țări, unde ieste acum Țara Muntenească și țara noastră, Moldova.
+Normalized Sentence [ și așa au purces  după acel pierdut și pierire crai lor  tot neam  în  de pe acest țară  undă  acum țară muntenesc și țară noastră  moldova .]
+Entities [Țara Muntenească]
+Sentiment Segments [( null, null, pierdut) ]
 
 
 Citéște gheografiile ceste de curândŭ și vei afla în Historiile Țarigradului că împrumutândŭ cu bani ianovezii pre împăratul Țarigradului, de oști împrotiva turcilor, le-au dat zalog Crâmul și acesta parte de loc, unghiul Mării Négre, cu scălile lui, unde este acmu Bugeacul.
 Normalized Sentence [ citi  de cura și vrea afla în  că împrumuta cu ban pre împărat   de oști  turc  le au dat   și acest parte de loc  unghi mări negru  cu  lui  undă fi  .]
 Entities [Țarigradului, Mării Négre, Historiile Țarigradului, Crâmul]
+Sentiment Segments [( null, null, fi) , ( null, null, vrea) , ( null, null, dat) , ( null, null, afla) , ( null, null, negru) ]
 
 
-Și tot pe o poveste stau și c
+Iară ieste altul, de neamul său leah, Iane Zamovschii, care orbŭ năvăléște, zicândŭ că nu suntŭ moldovénii, nici munténii din râmléni, ci trecândŭ pre aicea, pre aceste locuri, Traianŭ-împăratul și lăsândŭ slujitori de pază, au apucat o samă de dachi limba râmlenească.
+Normalized Sentence [ iară  altul  de neam său leah    car orb năvăli  zice că nu fi moldovean  nici muntean din râmlean  ci trece pre aicea  pre acest loc  împărat și lăsa slujitor de pază  au apucat o samă de  limbă  .]
+Entities [Iane Zamovschii, Traianŭ]
+Sentiment Segments [( null, null, orb) , ( null, null, apucat) , ( null, null, trece) , ( null, null, zice) , ( null, null, fi) , ( nu, null, moldovean) , ( null, null, năvăli) , ( null, null, lăsa) ]
+
+
+Și oricum, într-alt chip a fi nu poate, numai ce sunt făcute de dachii cei vechi.
+Normalized Sentence [ și oricum  într alt chip a fi nu putea  numai ce fi făcut de cel vechi .]
+Entities []
+Sentiment Segments [( null, null, făcut) , ( null, null, fi) , ( null, null, fi) , ( null, null, vechi) ]
+
+
+Și tot pe o poveste stau și céle câte să află în Țara Muntenească, sau de dachi sau altele de râmléni făcute sunt.
+Normalized Sentence [ și tot pe o poveste sta și cel câte să afla în țară muntenesc  sau de  sau alta de râmlean făcut fi .]
+Entities [Bugeacul, Țara Muntenească]
+Sentiment Segments [( null, null, făcut) , ( null, null, sta) , ( null, null, afla) , ( null, null, fi) ]
+
+
+Toate acestea și altile multe obicéiuri de la Împărățiia Râmului suntŭ, că și ienicerii cum suntŭ acum la turci, la Râm pritoriiani, adecă pedestrime de divan le zice, cum la turci culoglŭ și așa bulucurile pre numere: biringi, ichingi, iuciungi; la râmléni primani, secundani, terțiiani, cvartani, tot pre numere bulucurile, adecă: cei dintăi, cei ai doilea, cei ai treilea, cei ai patrulea, pre numărŭ să știia bulucurile.
+Normalized Sentence [ toate acest și  mult obicei de la împărăție  fi  că și ienicer cum fi acum la turci  la   adecă pedestrime de divan le zice  cum la turci și așa buluc pre număr        la râmlean        tot pre număr buluc  adecă  cel   cel avea doi  cel avea treilea  cel avea patrulea  pre număr să ști buluc .]
+Entities [Râm, Împărățiia Râmului]
+Sentiment Segments [( null, null, fi) , ( null, null, zice) , ( null, null, mult) , ( null, null, avea) , ( null, null, fi) , ( null, null, avea) , ( null, null, avea) ]
+
+
+Așa Decheval, craiul dachilor, luptându-să câteva zile să oprească oștile lui Traian, n-au putut birui, ci au purces oștile din războiŭ în răsipă.
+Normalized Sentence [ așa   crai   lupta să câteva zi să opri oaste lui   n au putea birui  ci au purces oaste din în  .]
+Entities [Traian, Dobrogea Decheval]
+Sentiment Segments [( null, null, lupta) , ( null, null, opri) , ( null, null, birui) ]
+
+
+Și nu-i divă că la turci vedem obicéiurile acéstea, care au fostŭ și la Împărățiia Râmului, căci că Țarigradul și câte țări țin turcii în ceastă parte de lume, care să chiamă Evropa, parte de Împărățiia Râmului ieste.
+Normalized Sentence [ și nu i divă că la turci vedea obicei acest  car au fost și la împărăție   căci că  și câte țară ține turci în  parte de lume  car să    parte de împărăție   .]
+Entities [Țarigradul, Evropa, Împărățiia Râmului]
+Sentiment Segments [( null, null, vedea) , ( null, null, ține) , ( null, null, fost) ]
+
+
+Și acei tunsuri mai aproape de pieliță noi dachii o numim schieren, iar acesta mai depărtat de peliță o numim coluen.
+Normalized Sentence [ și acel tunsură mai aproape de pieliță noi o numi   iar acest mai depărtat de  o numi  .]
+Entities []
+Sentiment Segments [( null, null, numi) , ( null, mai, depărtat) , ( null, null, numi) ]
+
+
+Aflu pomenită cetatea Chilii, carii o scrie în v leat 6973 (1465) că au luat-o Ștefan-vodă cel Bun de la turci, ș-apoi la v let 6987 (1479) iunie 22 dzăli, că în cestu an au început Ștefan-vodă a zidi cetatea Chilii și au și săvârșit-o într-acelaș an.
+Normalized Sentence [ afla pomeni cetate chilie  carie o scrie în v leat             că au luat o  vodă cel bun de la turci  ș apoi la v              iunie     că în cest an au început  vodă a zidi cetate chilie și au și săvârșit o într  an .]
+Entities [Chilii, Bun, Cetatea Albă, Ștefan]
+Sentiment Segments [( null, null, început) , ( null, null, pomeni) , ( null, null, bun) , ( null, null, afla) ]
+
+
+Ungurii: huni, maghiari, ugrii, iară sasii: dachii, sații, goții, masaghetii.
+Normalized Sentence [ ungur  hun  maghiar   iară    got  .]
+Entities []
+Sentiment Segments []
+
+
+Și așea, cât s-au putut ști de cetăți, acéste suntŭ acestor țări, că sunt unele făcute de dachii, cum ieste deschis la Cetatea Albă, celelalte și de râmléni și unele mai pe urmă și de domniele țării.
+Normalized Sentence [ și   cât s au putea ști de cetate  acest fi acest țară  că fi unele făcut de  cum  deschis la cetate albă  celălalt și de râmlean și unele mai pe urmă și de  țară .]
+Entities [Cetatea Albă]
+Sentiment Segments [( null, null, fi) , ( null, null, deschis) , ( null, null, făcut) , ( null, null, fi) ]
+
+
+Iară nu numai numele acesta, precum ai înțeles că ieste tot unul, la toate țările, și al tău și Italiei, precum vei înțelége și mai pre largŭ, la capul deosebi de numele acestor țări, că și turcii și grecii ne zic vlah, ce și dintr-altele te vei cunoaște: obicéiuri, hire, graiul și pănă astăzi, că ești dreptŭ vloh, adecă italiian și râmlean.
+Normalized Sentence [ iară nu numai nume acest  precum avea înțeles că  tot unul  la toate țară  și al tău și italia  precum vrea înțelege și mai pre larg  la cap deosebi de nume acest țară  că și turci și grec ne zice vlah  ce și dintr alta te vrea cunoaște  obicei    grai și  astăzi  că fi drept   adecă italian și râmlean .]
+Entities [Marea Albă, Italiei]
+Sentiment Segments [( null, null, vrea) , ( null, null, vlah) , ( null, null, zice) , ( null, null, avea) , ( null, null, larg) , ( null, null, deosebi) , ( null, null, vrea) , ( null, null, fi) , ( null, null, drept) , ( null, null, înțeles) ]
+
+
+Și aicea la noi, să zicem că de la capul șanțului, de unde să încépe totul, pe deasupra Galaților, alăturea cu Dunărea mérge pre aproape și peste Prut, iar nu departe de Dunăre, pre la satul turcesc acum, Troianul; dară deci unde să dipărtează la câmpi și de la Dunăre și de la Marea Neagră, iar peste apa Nistrului, ca mai departe mérge peste câmpi pe la târgul Vciorașnoe, pre unde l-am trecut eu, mai pe din sus de Chiov lovéște la Nipru și de la Niprul cu mai mare depărțime de mare, la Don.
+Normalized Sentence [ și aicea la noi  să zice că de la cap șanț  de undă să începe tot  pe deasupra   alăturea cu dunăre merge pre aproape și peste   iar nu departe de dunăre  pre la sat turcesc acum  troian  dară deci undă să  la  și de la dunăre și de la mare negru  iar peste apă   ca mai departe merge peste  pe la târg   pre undă l avea trecut eu  mai pe din sus de  lovi la și de la  cu mai mare  de mare  la  .]
+Entities [Dunăre, Nipru, Prut, Galaților, Vciorașnoe, Marea Neagră, Chiov, Niprul, Troianul, Nistrului, Dunărea]
+Sentiment Segments [( null, null, avea) , ( null, null, mare) , ( null, null, merge) , ( null, null, mare) , ( null, null, zice) , ( null, mai, mare) , ( null, null, începe) , ( null, null, merge) , ( null, null, lovi) , ( null, null, negru) ]
+
+
+Că întăiu Cetatea Albă, mai înainte de Traian au fost, că Avgustu-chesariul, care împătat a Râmului acmu triimitea și el boierii cei greșiți la închisoare, cum dzic turcii, surgun, la Cetatea Albă, unde și pe un dascal anume Poblius Ovidius, l-au trimis pentru niște stihuri de dragoste, ce scrisése acel dascal, de îndemnase Râmul la curvie, carele au și murit în Cetatea Albă.
+Normalized Sentence [ că  cetate albă  mai înainte de  au fost  că   car  a  trimite și el boieri cel greși la închisoare  cum zice turci    la cetate albă  undă și pe un  anume    l au trimis pentru niște stih de dragoste  ce scrie acel   de îndemna  la curvie  car au și muri în cetate albă .]
+Entities [Poblius Ovidius, Traian, Cetatea Albă, Râmului, Avgustu, Râmul]
+Sentiment Segments [( null, null, zice) , ( null, null, greși) , ( null, null, trimis) , ( null, null, îndemna) , ( null, null, trimite) , ( null, null, fost) ]
+
+
+Puternică într-o vréme, cât supt vrémea Împărăției Râmului supt Domentiian-împăratŭ, iară la Dachia crăind Decheval-craiul, lua dachii o sumă de bani din visteriia Râmului, cum lua tătarii de Crâmŭ de la Moscŭ și de la léși, să nu le robească țările, că prăda și dachii Italiia cu călărimea, pănă în zilele lui Traian-împăratul, ce au împărățitŭ pre urma lui Domentian-împăratul.Pentru ei a fost ceva ce nu se putea uita.
+Normalized Sentence [ puternic într o vreme  cât supt vreme împărăție  supt împărat  iară la    crai  lua o sumă de ban din visterie   cum lua tătar de de la mosc și de la leș  să nu le robi țară  că prăda și italia cu călărime   în zi lui  împărat  ce au împărăți pre urma lui  împărat pentru ea a fost ceva ce nu se putea uita .]
+Entities [Crâmŭ, Domentiian, Împărăției Râmului, Dachia, Pentru, Traian, Domentian, Râmului, Moscŭ, Decheval, Italiia]
+Sentiment Segments [( nu, null, robi) , ( null, null, urma) , ( nu, null, uita) , ( null, null, lua) , ( null, null, supt) , ( null, null, supt) , ( null, null, fost) , ( null, null, puternic) , ( null, null, prăda) , ( null, null, lua) ]
+
+
+Multe obicéiuri de ale Râmului suntŭ acum la turci ca acéstea, ce iau și ei de a zecea oameni și iară așa îi împart pre la grădini întăi, apoi în ceata ienicerilor și fac și ei apoi din slujitori bătrâni oturaci, curugii și timaruri.
+Normalized Sentence [ mult obicei de ale  fi acum la turci ca acest  ce lua și ea de a zecea om și iară așa îi împărți pre la grădină   apoi în ceată ienicer și face și ea apoi din slujitor bătrân   și timar .]
+Entities [Râmului]
+Sentiment Segments [( null, null, mult) , ( null, null, face) , ( null, null, împărți) , ( null, null, bătrân) , ( null, null, fi) , ( null, null, lua) ]
+
+
+Mai de crezut suntŭ acéia carii țin că Traianu-împăratul au săpat acesta șanțŭ în vécinica pomenire și veste și să să știe șleavul oștii de ceia carii să tragŭ după oști mari, niguțători și oșténi, cum vedem și acum pre împărații turcești și vezirii lor, pre unde mergŭ cu oștile, fac movile pe șleavul oștilor și pentru véstea și pentru îndireptarea celora ce vin, ori oșténi, ori olăcari, ori niguțători, pre urmă dupre oști.
+Normalized Sentence [ mai de crede fi acel carie ține că împărat au săpat acest șanț în vecinic pomenire și veste și să să ști  oști de  carie să trage după oști mare   și oștean  cum vedea și acum pre împărat turcesc și lor  pre undă merge cu oaste  face movilă pe  oaste și pentru veste și pentru   ce vin  ori oștean  ori olăcar  ori   pre urmă dupre oști .]
+Entities [Traianu, Don]
+Sentiment Segments [( null, null, merge) , ( null, null, vedea) , ( null, null, crede) , ( null, null, trage) , ( null, null, ține) , ( null, null, mare) , ( null, null, face) , ( null, null, fi) ]
+
+

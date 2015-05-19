@@ -34,8 +34,8 @@ import org.languagetool.tagging.ro.RomanianTagger;
  */
 public class OpinionTool {
 
-    public OpinionTool(String fileName) throws IOException {
-        stringBuilder = new StringBuilder();
+    public OpinionTool(String normFile, String lexFile) throws IOException {
+        stringBuilder_ = new StringBuilder();
         sentences1_ = new ArrayList();
         sentences2_ = new ArrayList();
         sentences3_ = new ArrayList();
@@ -45,18 +45,36 @@ public class OpinionTool {
         opinions3_ = new ArrayList();
         romanianTagger_ = new RomanianTagger();
         properNouns_ = new HashSet();
+        lexicon_ = new HashMap();
 
-        ReadNormalizedFile(fileName);
+        ReadNormalizedFile(normFile);
+        ReadLexiconFile(lexFile);
+    }
+    
+    void ReadLexiconFile(String fileName) throws FileNotFoundException, IOException {
+        InputStream fis = new FileInputStream(fileName);
+        InputStreamReader isr = new InputStreamReader(fis, Charset.forName("UTF-8"));
+        corpusBufferedReader_ = new BufferedReader(isr);
+
+        String line = "";
+        String[] tokens;
+        double score;
+        while ((line = corpusBufferedReader_.readLine()) != null) {
+            tokens = line.split(" ");
+            score = Double.valueOf(tokens[1]);
+            lexicon_.put(tokens[0], score);
+        }
+
     }
 
     void ReadNormalizedFile(String fileName) throws FileNotFoundException, IOException {
         InputStream fis = new FileInputStream(fileName);
         InputStreamReader isr = new InputStreamReader(fis, Charset.forName("UTF-8"));
-        corpusBufferedReader = new BufferedReader(isr);
+        corpusBufferedReader_ = new BufferedReader(isr);
 
         String line = "";
         String[] tokens;
-        while ((line = corpusBufferedReader.readLine()) != null) {
+        while ((line = corpusBufferedReader_.readLine()) != null) {
             tokens = line.split(" ");
             normalizations_.put(tokens[0], tokens[1]);
         }
@@ -95,13 +113,13 @@ public class OpinionTool {
             throws FileNotFoundException, IOException {
         InputStream fis = new FileInputStream(fileName);
         InputStreamReader isr = new InputStreamReader(fis, Charset.forName("UTF-8"));
-        corpusBufferedReader = new BufferedReader(isr);
+        corpusBufferedReader_ = new BufferedReader(isr);
 
-        stringBuilder.setLength(0);
+        stringBuilder_.setLength(0);
         String line = "";
         String[] sentences;
 
-        while ((line = corpusBufferedReader.readLine()) != null) {
+        while ((line = corpusBufferedReader_.readLine()) != null) {
             sentences = line.split("(?<=[.!?])\\s* ");
             for (String sentence : sentences) {
                 if (HasKeyword(sentence, keywords)) {
@@ -116,20 +134,6 @@ public class OpinionTool {
             }
 
         }
-
-        /* while ((line = corpusBufferedReader.readLine()) != null) {
-         if (HasKeyword(line, keywords)) {
-         sentences = line.split("(?<=[.!?])\\s* ");
-         if (index == 1) {
-         sentences1_.addAll(Arrays.asList(sentences));
-         } else if (index == 2) {
-         sentences2_.addAll(Arrays.asList(sentences));
-         } else {
-         sentences3_.addAll(Arrays.asList(sentences));
-         }
-
-         }
-         } */
     }
 
     public void ReadFiles(String fileName1, String fileName2, String fileName3,
@@ -160,6 +164,12 @@ public class OpinionTool {
         DetermineEntitiesInOpinionsImplementation(opinions3_);
     }
 
+    public void ComputeSentimentSegmentsInOpinions() {
+        ComputeSentimentSegmentsInOpinionsImplementation(opinions1_,1);
+        ComputeSentimentSegmentsInOpinionsImplementation(opinions2_,2);
+        ComputeSentimentSegmentsInOpinionsImplementation(opinions3_,3);
+    }
+
     public void WriteToFiles() throws IOException {
         System.out.println("No of sentences 1 = " + opinions1_.size());
         System.out.println("No of sentences 2 = " + opinions2_.size());
@@ -174,9 +184,76 @@ public class OpinionTool {
             writerForFile1_.write("]");
             writerForFile1_.write(newLine + "Entities ");
             writerForFile1_.write(opinion.getEntities().toString());
+            writerForFile1_.write(newLine + "Sentiment Segments ");
+            writerForFile1_.write(opinion.getSegments().toString());
             writerForFile1_.write(newLine + newLine + newLine);
         }
+        
+        writerForFile1_.close();
 
+    }
+
+    public Set<SentimentSegment> ComputeSentimentSegmentFromOpinion(Opinion opinion) {
+
+        Set<SentimentSegment> segmentSet = new HashSet();
+        String normalizedSentence = opinion.getNormalizedSentence();
+        String words[] = normalizedSentence.split("[\\s.,!:;”„\"()-?']");
+        SentimentSegment segment;
+
+        for (int iter = 0; iter < words.length; iter++) {
+            if (lexicon_.containsKey(words[iter])) {
+                // Check for negation and modifiers
+                if (iter >= 3 && words[iter - 1].equals("mai") && (words[iter - 2].
+                        equals("cel") || (words[iter - 2].equals("cea")))
+                        && words[iter - 3].equals("nu")) {
+                    segment = new SentimentSegment("nu", "cel mai", words[iter]);
+                } else if (iter >= 2 && words[iter - 1].equals("mai") && (words[iter - 2].
+                        equals("cel") || (words[iter - 2].equals("cea")))) {
+                    segment = new SentimentSegment(null, "cel mai", words[iter]);
+                } else if (iter >= 2 && words[iter - 1].equals("mai")
+                        && words[iter - 2].equals("nu")) {
+                    segment = new SentimentSegment("nu", "mai", words[iter]);
+                } else if (iter >= 1 && words[iter - 1].equals("mai")) {
+                    segment = new SentimentSegment(null, "mai", words[iter]);
+                } else if (iter >= 2 && words[iter - 2].equals("nu")) {
+                    segment = new SentimentSegment("nu", null, words[iter]);
+                } else if (iter >= 3 && words[iter - 3].equals("nu")) {
+                    segment = new SentimentSegment("nu", null, words[iter]);
+                } else {
+                    segment = new SentimentSegment(null, null, words[iter]);
+                }
+                
+             segmentSet.add(segment);
+            }
+            
+        }
+
+        return segmentSet;
+    }
+
+    private void ComputeSentimentSegmentsInOpinionsImplementation(
+            ArrayList<Opinion> opinions, int index) {
+
+        Iterator<Opinion> iterator = opinions.iterator();
+        Opinion opinion;
+        Set<Opinion> newOpinions = new HashSet();
+        Set<SentimentSegment> sent;
+
+        while (iterator.hasNext()) {
+            opinion = iterator.next();
+            sent = ComputeSentimentSegmentFromOpinion(opinion);
+            opinion.addSentimentSegments(sent);
+            newOpinions.add(opinion);
+            iterator.remove();
+        }
+        
+        if(index == 1) {
+            opinions1_.addAll(newOpinions);
+        } else if(index == 2) {
+            opinions2_.addAll(newOpinions);
+        } else {
+            opinions3_.addAll(newOpinions);
+        }
     }
 
     private void DetermineEntitiesInOpinionsImplementation(ArrayList<Opinion> opinions) {
@@ -304,8 +381,8 @@ public class OpinionTool {
     private BufferedWriter writerForFile1_;
     private BufferedWriter writerForFile2_;
     private BufferedWriter writerForFile3_;
-    private BufferedReader corpusBufferedReader;
-    private final StringBuilder stringBuilder;
+    private BufferedReader corpusBufferedReader_;
+    private final StringBuilder stringBuilder_;
     private ArrayList<String> sentences1_;
     private ArrayList<String> sentences2_;
     private ArrayList<String> sentences3_;
@@ -315,5 +392,6 @@ public class OpinionTool {
     private RomanianTagger romanianTagger_;
     private Map<String, String> normalizations_;
     private Set<String> properNouns_;
+    private Map<String,Double> lexicon_;
 
 }

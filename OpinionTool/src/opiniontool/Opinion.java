@@ -45,6 +45,18 @@ public class Opinion {
         return entities_;
     }
     
+    public Set<SentimentSegment> getSegments() {
+        return sentimentSegments_;
+    }
+    
+    public void addSentimentSegment(SentimentSegment sent) {
+        sentimentSegments_.add(sent);
+    }
+    
+    public void addSentimentSegments(Set<SentimentSegment> sent) {
+        sentimentSegments_.addAll(sent);
+    }
+    
     private String normalizedSentence_;
     private String sentence_;
     private Set<String> affects_;
